@@ -1,0 +1,318 @@
+[
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_bookmark_selector_dark.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/bookmark_selector_dark.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_complete_item.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/complete_item.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_add_selector.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/add_selector.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_bookmark_default_light.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_bookmark_default_light.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/menu_whilelist_menu.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/menu/whilelist_menu.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_down_selector.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/down_selector.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_whitelist.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/whitelist.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_refresh_selector.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/refresh_selector.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout-v21_dialog_desc.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout-v21/dialog_desc.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_refresh_default.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_refresh_default.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_dialog_list.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/dialog_list.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_readability.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/readability.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_album_shape_blue.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/album_shape_blue.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/menu_clear_menu.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/menu/clear_menu.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_history_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_history_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_round_corner_shape_light.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/round_corner_shape_light.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_bookmark_default_dark.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_bookmark_default_dark.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_shadow_above.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/shadow_above.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_setting_default.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_setting_default.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_cl_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_cl_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_main_bottom.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/main_bottom.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_round_corner_shape_white.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/round_corner_shape_white.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_album_shape_dark.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/album_shape_dark.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_down_default.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_down_default.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_up_default.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_up_default.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_drop_down_shape.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/drop_down_shape.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_bookmark_selector_light.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/bookmark_selector_light.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_refresh_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_refresh_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_whitelist_item.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/whitelist_item.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_background.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_background.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_album.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/album.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_cl_selector_light.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/cl_selector_light.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_overflow_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_overflow_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_main_top.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/main_top.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_grid_item.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/grid_item.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_dialog_edit.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/dialog_edit.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_cl_light.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_cl_light.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_add_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_add_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/xml_preference_clear.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/xml/preference_clear.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/menu_readability_menu.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/menu/readability_menu.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_overflow_selector.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/overflow_selector.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_ic_launcher.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/ic_launcher.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/menu_token_menu.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/menu/token_menu.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_bookmark_selector_blue.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/bookmark_selector_blue.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_cl_selector_dark.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/cl_selector_dark.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_dialog_text_item.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/dialog_text_item.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_cl_dark.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_cl_dark.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_up_selector.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/up_selector.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_dialog_sign_in.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/dialog_sign_in.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_add_default.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_add_default.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_dialog_desc.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/dialog_desc.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_down_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_down_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/menu_setting_menu.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/menu/setting_menu.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/anim_album_slide_in_up.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/anim/album_slide_in_up.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_progress_bar_layer_list.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/progress_bar_layer_list.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_record_item.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/record_item.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_overflow_default.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_overflow_default.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_dialog_license_item.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/dialog_license_item.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/xml_searchable.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/xml/searchable.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notification_ninja.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_notification_ninja.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_home.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/home.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_bookmark_default_blue.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_bookmark_default_blue.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/xml_preference_setting.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/xml/preference_setting.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_clear.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_clear.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout-v21_dialog_edit.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout-v21/dialog_edit.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_done_all.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_done_all.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_record_list.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/record_list.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout-v21_dialog_list.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout-v21/dialog_list.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_setting_selector.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/setting_selector.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_bookmark_active_blue.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_bookmark_active_blue.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/layout_token.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/token.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_bookmark_active_dark.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_bookmark_active_dark.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_shadow_below.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/shadow_below.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_history_selector.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/history_selector.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_history_default.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_history_default.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_up_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_up_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_action_setting_active.png.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_setting_active.png"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/anim_album_fade_out.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/anim/album_fade_out.xml"
+    },
+    {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/debug/drawable_grid_item_shape.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/grid_item_shape.xml"
+    }
+]

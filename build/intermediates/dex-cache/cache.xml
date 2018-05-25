@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/f79ee4a1ec37338f314c2ae9b92311d1/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/37252d0a8fce661a9a096d422fe87b34/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/44f154eb414b05d90dbd4264b9e26cf0/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/1b2c09edfef725aab81dd58623c5fa3e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/3c9804bfee9f786eaa8948dc4a3452c2/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/a9a73a2a752e4725be43499ba6503b1a/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+
+</items>

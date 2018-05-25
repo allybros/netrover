@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "map": [
+                {
+                    "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "72,67,4,57,17,27,47,37",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "4001,3745,57,3169,872,1454,2603,2032",
+                        "endLines": "75,70,15,65,25,35,55,45",
+                        "endColumns": "12,12,12,12,12,12,12,12",
+                        "endOffsets": "4220,3995,866,3739,1448,2026,3163,2597"
+                    },
+                    "to": {
+                        "startLines": "2,6,10,22,31,40,49,58",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,279,534,1348,1923,2504,3081,3646",
+                        "endLines": "5,9,21,30,39,48,57,66",
+                        "endColumns": "12,12,12,12,12,12,12,12",
+                        "endOffsets": "274,529,1343,1918,2499,3076,3641,4210"
+                    }
+                }
+            ]
+        }
+    ]
+}
