@@ -40,6 +40,12 @@ public class NinjaWebViewClient extends WebViewClient {
         this.enable = enable;
     }
 
+    //Edit
+
+    private boolean pageFinishedLoading = true;
+
+    //Edit ends
+
     public NinjaWebViewClient(NinjaWebView ninjaWebView) {
         super();
         this.ninjaWebView = ninjaWebView;
@@ -52,6 +58,9 @@ public class NinjaWebViewClient extends WebViewClient {
     @Override
     public void onPageStarted(WebView view, String url, Bitmap favicon) {
         super.onPageStarted(view, url, favicon);
+        //edit starts
+        pageFinishedLoading = false;
+        //edit end
 
         if (view.getTitle() == null || view.getTitle().isEmpty()) {
             ninjaWebView.update(context.getString(R.string.album_untitled), url);
@@ -79,6 +88,9 @@ public class NinjaWebViewClient extends WebViewClient {
         } else {
             ninjaWebView.postInvalidate();
         }
+        //start
+        pageFinishedLoading=true;
+        //end
     }
 
     @Override
@@ -224,5 +236,11 @@ public class NinjaWebViewClient extends WebViewClient {
         });
 
         builder.create().show();
+    }
+
+
+    //Start edit
+    public boolean isPageFinishedLoading(){
+        return pageFinishedLoading;
     }
 }

@@ -209,6 +209,8 @@
     <string name="notification_content_holder">
         點擊前往浏覽網頁
     </string>
+    <string name="permissions_description">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
+    <string name="permissions_needed_title">Application Permissions</string>
     <string name="readability_empty">
         閱讀模式加載失敗，原因可能是網絡連接問題，Readability令牌錯誤或者鏈接錯誤
     </string>

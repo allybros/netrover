@@ -42,6 +42,8 @@
 
             </ImageButton>
 
+
+
             <ImageButton android:id="@+id/switcher_add"
                          android:contentDescription="@null"
                          android:layout_width="wrap_content"
@@ -49,30 +51,26 @@
                          android:layout_centerInParent="true"
                          android:layout_margin="@dimen/layout_margin_8dp"
                          android:src="@drawable/add_selector"
-                         android:background="@color/transparent">
-            </ImageButton>
+                         android:background="@color/transparent"/>
 
+
+            <ImageButton android:id="@+id/switcher_overflow"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="@dimen/layout_margin_8dp"
+                         android:layout_alignParentRight="true"
+                         android:background="@color/transparent"
+                         android:contentDescription="@null"
+                         android:src="@drawable/overflow_selector"/>
             <ImageButton android:id="@+id/switcher_history"
                          android:contentDescription="@null"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:layout_alignParentRight="true"
+                         android:layout_toLeftOf="@id/switcher_overflow"
                          android:layout_margin="@dimen/layout_margin_8dp"
-                         android:src="@drawable/history_selector"
-                         android:background="@color/transparent">
-            </ImageButton>
+                         android:src="@drawable/ic_incognito_disabled"
+                         android:background="@color/transparent" />
 
-            <ImageButton
-                android:id="@+id/switcher_overflow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/layout_margin_8dp"
-                android:layout_toLeftOf="@id/switcher_history"
-                android:background="@color/transparent"
-                android:contentDescription="@null"
-                android:src="@drawable/overflow_selector">
-
-            </ImageButton>
 
         </RelativeLayout>
 
@@ -81,7 +79,9 @@
                               android:layout_height="match_parent"
                               android:layout_alignParentTop="true"
                               android:layout_above="@id/switcher_header"
-                              android:scrollbars="none">
+                              android:scrollbars="none"
+                              android:layout_marginLeft="@dimen/layout_margin_8dp"
+                              android:layout_marginRight="@dimen/layout_margin_8dp">
 
             <LinearLayout android:id="@+id/switcher_container"
                           android:orientation="horizontal"

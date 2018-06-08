@@ -1,15 +1,19 @@
 package com.allybros.netrover.Activity;
 
+import android.Manifest;
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.app.SearchManager;
 import android.app.SharedElementCallback;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,11 +24,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
+import android.provider.Browser;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputType;
 import android.text.TextWatcher;
 import android.text.method.KeyListener;
+import android.util.ArrayMap;
 import android.util.Log;
 import android.view.*;
 import android.view.animation.Animation;
@@ -48,12 +56,14 @@ import com.allybros.netrover.R;
 import com.allybros.netrover.Service.HolderService;
 import com.allybros.netrover.Unit.BrowserUnit;
 import com.allybros.netrover.Unit.IntentUnit;
+import com.allybros.netrover.Unit.PermissionsUnit;
 import com.allybros.netrover.Unit.ViewUnit;
 import com.allybros.netrover.View.*;
 import org.askerov.dynamicgrid.DynamicGridView;
 
 import java.util.*;
 
+import static android.content.ContentValues.TAG;
 import static com.allybros.netrover.View.SwitcherPanel.Status.EXPANDED;
 
 public class BrowserActivity extends Activity implements BrowserController {
@@ -128,12 +138,14 @@ public class BrowserActivity extends Activity implements BrowserController {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            this.getWindow().setStatusBarColor(getResources().getColor(R.color.background_dark));
             ActivityManager.TaskDescription description = new ActivityManager.TaskDescription(
                     getString(R.string.app_name),
                     BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher),
                     getResources().getColor(R.color.background_dark)
             );
             setTaskDescription(description);
+            WebView.enableSlowWholeDocumentDraw();
         }
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
@@ -152,11 +164,11 @@ public class BrowserActivity extends Activity implements BrowserController {
         switcherPanel.setStatusListener(new SwitcherPanel.StatusListener() {
             @Override
             public void onFling() {
-                if (omniboxOverflow.getDrawable().getConstantState().equals(getResources().getDrawable(R.drawable.up_selector).getConstantState())){
+                if (omniboxOverflow.getDrawable().getConstantState()
+                        .equals(getResources().getDrawable(R.drawable.up_selector).getConstantState())){
                     omniboxOverflow.setImageResource(R.drawable.down_selector);
-                    Log.d("Uçarken:","Aşağı ayarla");
-                }else{ omniboxOverflow.setImageResource(R.drawable.up_selector);
-                    Log.d("Uçarken:","Yukarı ayarla");
+                }else{
+                    omniboxOverflow.setImageResource(R.drawable.up_selector);
                 }
             }
 
@@ -227,9 +239,10 @@ public class BrowserActivity extends Activity implements BrowserController {
         Intent toHolderService = new Intent(this, HolderService.class);
         IntentUnit.setClear(false);
         stopService(toHolderService);
-
-        if (intent != null && intent.hasExtra(IntentUnit.OPEN)) { // From HolderActivity's menu
-            pinAlbums(intent.getStringExtra(IntentUnit.OPEN));
+        if (intent != null && intent.hasExtra("URL")) { // UCA
+            pinAlbums(intent.getStringExtra("URL"));
+            Log.d("URL",intent.getStringExtra("URL"));
+            intent.removeExtra("URL");
         } else if (intent != null && intent.getAction() != null && intent.getAction().equals(Intent.ACTION_WEB_SEARCH)) { // From ActionMode and some others
             pinAlbums(intent.getStringExtra(SearchManager.QUERY));
         } else if (intent != null && filePathCallback != null) {
@@ -237,14 +250,10 @@ public class BrowserActivity extends Activity implements BrowserController {
         } else {
             SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
             if (sp.getBoolean(getString(R.string.sp_first), true)) {
-                String lang;
-                if (getResources().getConfiguration().locale.getLanguage().equals("zh")) {
-                    lang = BrowserUnit.INTRODUCTION_ZH;
-                } else {
-                    lang = BrowserUnit.INTRODUCTION_EN;
-                }
-                pinAlbums(BrowserUnit.BASE_URL + lang);
-                sp.edit().putBoolean(getString(R.string.sp_first), false).commit();
+                Intent ıntent = new Intent(BrowserActivity.this,IntroActivity.class);
+                startActivity(ıntent);
+                PermissionsUnit.firstTimePermissions(this); //Edit by UCA
+
             } else {
                 pinAlbums(null);
             }
@@ -439,7 +448,6 @@ public class BrowserActivity extends Activity implements BrowserController {
 
                 updateBookmarks();
                 updateAutoComplete();
-                //addAlbum(BrowserUnit.FLAG_BOOKMARKS);
             }
         });
     }
@@ -575,15 +583,26 @@ public class BrowserActivity extends Activity implements BrowserController {
 
         DynamicGridView gridView = (DynamicGridView) layout.findViewById(R.id.home_grid);
         TextView aboutBlank = (TextView) layout.findViewById(R.id.home_about_blank);
+        Button homeBookmarks = layout.findViewById(R.id.home_bookmarks);
+        Button homeHistory = layout.findViewById(R.id.home_history);
         gridView.setEmptyView(aboutBlank);
 
         final GridAdapter gridAdapter;
+        int rows;
+        final float scale = getApplicationContext().getResources().getDisplayMetrics().density ;
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             gridAdapter = new GridAdapter(this, gridList, 3);
+            rows = (gridList.size()/3);
+            rows += (gridList.size()%3>0)? 1 : 0;
+
         } else {
             gridAdapter = new GridAdapter(this, gridList, 2);
+            rows = (gridList.size()/2);
+            rows += (gridList.size()%2>0)? 1 : 0;
         }
         gridView.setAdapter(gridAdapter);
+        Log.d("Rows: ", ""+rows);
+        gridView.getLayoutParams().height = (int) (rows*153*scale); //UCA
         gridAdapter.notifyDataSetChanged();
 
         /* Wait for gridAdapter.notifyDataSetChanged() */
@@ -611,6 +630,26 @@ public class BrowserActivity extends Activity implements BrowserController {
                 return true;
             }
         });
+
+        homeBookmarks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateAlbum(BrowserUnit.FLAG_BOOKMARKS);
+            }
+        });
+
+        homeHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addAlbum(BrowserUnit.FLAG_HISTORY);
+            }
+        });
+    }
+
+    private void initHomeList(Context context, String ... items ){
+        //ListView homeList = findViewById(R.id.home_list);
+        //ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,android.R.layout.list_content,android.R.id.text1,items);
+        //homeList.setAdapter(dataAdapter);
     }
 
     private void initBHList(final NinjaRelativeLayout layout, boolean update) {
@@ -749,6 +788,13 @@ public class BrowserActivity extends Activity implements BrowserController {
             }
         });
     }
+   // buraya gelirsin
+    private synchronized void updateAlbum(int flag) {
+        addAlbum(flag);
+
+    }
+
+
 
     private synchronized void addAlbum(int flag) {
         final AlbumController holder;
@@ -1361,6 +1407,7 @@ public class BrowserActivity extends Activity implements BrowserController {
                     BrowserUnit.copyURL(BrowserActivity.this, target);
                 } else if (s.equals(getString(R.string.main_menu_save))) { // Save
                     BrowserUnit.download(BrowserActivity.this, target, target, BrowserUnit.MIME_TYPE_IMAGE);
+
                 }
 
                 dialog.hide();
@@ -1586,6 +1633,7 @@ public class BrowserActivity extends Activity implements BrowserController {
                 } else if (s.equals(array[3])) { // Screenshot
                     NinjaWebView ninjaWebView = (NinjaWebView) currentAlbumController;
                     new ScreenshotTask(BrowserActivity.this, ninjaWebView).execute();
+
                 } else if (s.equals(array[4])) { // Readability
                     String token = sp.getString(getString(R.string.sp_readability_token), null);
                     if (token == null || token.trim().isEmpty()) {

@@ -24,7 +24,7 @@ INJECTED from /home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/AndroidM
 	xmlns:android
 		ADDED from /home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:3:11-69
 	android:versionCode
-		ADDED from /home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:5:11-40
+		ADDED from /home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:5:11-41
 		INJECTED from /home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml
 		INJECTED from /home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml
 uses-sdk

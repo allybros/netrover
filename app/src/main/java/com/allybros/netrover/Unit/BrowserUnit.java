@@ -1,5 +1,6 @@
 package com.allybros.netrover.Unit;
 
+import android.app.Activity;
 import android.app.DownloadManager;
 import android.content.*;
 import android.graphics.Bitmap;
@@ -41,8 +42,9 @@ public class BrowserUnit {
     public static final String BOOKMARK_TITLE = "{title}";
     public static final String BOOKMARK_URL = "{url}";
     public static final String BOOKMARK_TIME = "{time}";
-    public static final String INTRODUCTION_EN = "ninja_introduction_en.html";
-    public static final String INTRODUCTION_ZH = "ninja_introduction_zh.html";
+    public static final String INTRODUCTION_EN = "netrover_introduction_en.html";
+    public static final String INTRODUCTION_ZH = "netrover_introduction_zh.html";
+    public static final String INTRODUCTION_TR = "netrover_introduction_tr.html";
 
     public static final String SEARCH_ENGINE_GOOGLE = "https://www.google.com/search?q=";
     public static final String SEARCH_ENGINE_DUCKDUCKGO = "https://duckduckgo.com/?q=";
@@ -190,19 +192,24 @@ public class BrowserUnit {
         NinjaToast.show(context, R.string.toast_copy_successful);
     }
 
-    public static void download(Context context, String url, String contentDisposition, String mimeType) {
-        DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-        String filename = URLUtil.guessFileName(url, contentDisposition, mimeType); // Maybe unexpected filename.
+    public static void download (Context context, String url, String contentDisposition, String mimeType){
+        if (PermissionsUnit.permissionsCheck((Activity) context, PermissionsUnit.WRITE_EXTERNAL_STORAGE)){
+            DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
+            String filename = URLUtil.guessFileName(url, contentDisposition, mimeType); // Maybe unexpected filename.
 
-        request.allowScanningByMediaScanner();
-        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        request.setTitle(filename);
-        request.setMimeType(mimeType);
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, filename);
+            request.allowScanningByMediaScanner();
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+            request.setTitle(filename);
+            request.setMimeType(mimeType);
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, filename);
 
-        DownloadManager manager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
-        manager.enqueue(request);
-        NinjaToast.show(context, R.string.toast_start_download);
+            DownloadManager manager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+            manager.enqueue(request);
+            NinjaToast.show(context, R.string.toast_start_download);
+        }else {
+            NinjaToast.show(context,"Permission Issue");
+        }
+
     }
 
     public static String screenshot(Context context, Bitmap bitmap, String name) {

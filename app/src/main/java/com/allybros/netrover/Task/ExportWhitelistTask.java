@@ -1,10 +1,12 @@
 package com.allybros.netrover.Task;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import com.allybros.netrover.R;
 import com.allybros.netrover.Unit.BrowserUnit;
+import com.allybros.netrover.Unit.PermissionsUnit;
 import com.allybros.netrover.View.NinjaToast;
 
 public class ExportWhitelistTask extends AsyncTask<Void, Void, Boolean> {
@@ -20,6 +22,7 @@ public class ExportWhitelistTask extends AsyncTask<Void, Void, Boolean> {
 
     @Override
     protected void onPreExecute() {
+        PermissionsUnit.permissionsCheck((Activity) context, PermissionsUnit.WRITE_EXTERNAL_STORAGE);
         dialog = new ProgressDialog(context);
         dialog.setCancelable(false);
         dialog.setMessage(context.getString(R.string.toast_wait_a_minute));

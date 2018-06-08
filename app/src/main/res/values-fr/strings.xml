@@ -531,5 +531,9 @@
     <string name="whitelist_add">
         Ajouter
     </string>
+    <string name="permissions_needed_title">Application Permissions</string>
+    <string name="permissions_description">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
+    <string name="setting_title_privacy">Privacy</string>
+    <string name="setting_title_accessibility">Accessibility</string>
 
 </resources>

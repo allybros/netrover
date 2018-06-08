@@ -1,4 +1,4 @@
-#Sat May 19 17:27:32 EET 2018
-base.0=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/28
+#Fri Jun 08 09:03:53 EET 2018
+base.0=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/142
 path.0=classes.dex
 renamed.0=classes.dex

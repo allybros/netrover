@@ -525,5 +525,9 @@
         Add
     </string>
     <string name="token_desc">Go to https://www.readability.com/developers/api to get your own Readability Token</string>
+    <string name="permissions_needed_title">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
+    <string name="permissions_description">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
+    <string name="setting_title_privacy">Privacy</string>
+    <string name="setting_title_accessibility">Accessibility</string>
 
 </resources>

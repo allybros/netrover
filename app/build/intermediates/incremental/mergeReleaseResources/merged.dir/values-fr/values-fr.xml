@@ -209,6 +209,8 @@
     <string name="notification_content_holder">
         Cliquez pour voir les pages
     </string>
+    <string name="permissions_description">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
+    <string name="permissions_needed_title">Application Permissions</string>
     <string name="readability_empty">
         Impossible de charger Readability, vérifiez votre connexion Internet.
     </string>

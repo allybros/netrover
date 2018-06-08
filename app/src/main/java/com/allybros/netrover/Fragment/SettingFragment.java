@@ -56,7 +56,7 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.preference_setting);
+        addPreferencesFromResource(R.xml.preference_setting_new);
     }
 
     @Override
@@ -89,7 +89,7 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
         tabPosition.setSummary(summary);
 
         vcEntries = getResources().getStringArray(R.array.setting_entries_volume_control);
-        summary = vcEntries[Integer.valueOf(sp.getString(getString(R.string.sp_volume), "1"))];
+        summary = vcEntries[Integer.valueOf(sp.getString(getString(R.string.sp_volume), "3"))];
         volumeControl = (ListPreference) findPreference(getString(R.string.sp_volume));
         volumeControl.setSummary(summary);
 

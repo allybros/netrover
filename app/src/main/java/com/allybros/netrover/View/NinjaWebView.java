@@ -87,6 +87,7 @@ public class NinjaWebView extends WebView implements AlbumController {
         this.clickHandler = new NinjaClickHandler(this);
         this.gestureDetector = new GestureDetector(context, new NinjaGestureListener(this));
 
+
         initWebView();
         initWebSettings();
         initPreferences();
@@ -125,7 +126,8 @@ public class NinjaWebView extends WebView implements AlbumController {
 
     private synchronized void initWebSettings() {
         WebSettings webSettings = getSettings();
-        userAgentOriginal = webSettings.getUserAgentString();
+        //userAgentOriginal = webSettings.getUserAgentString();
+        userAgentOriginal = "Mozilla/5.0 (Android "+Build.VERSION.RELEASE+"; Mobile; rv:41.0) Gecko/41.0 Firefox/41.0";
 
         webSettings.setAllowContentAccess(true);
         webSettings.setAllowFileAccess(true);
@@ -149,6 +151,9 @@ public class NinjaWebView extends WebView implements AlbumController {
         } else {
             webSettings.setLoadsImagesAutomatically(false);
         }
+
+        webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
+
     }
 
     public synchronized void initPreferences() {
@@ -385,7 +390,9 @@ public class NinjaWebView extends WebView implements AlbumController {
     }
 
     public boolean isLoadFinish() {
-        return getProgress() >= BrowserUnit.PROGRESS_MAX;
+
+        // return getProgress() >= BrowserUnit.PROGRESS_MAX;
+        return this.webViewClient.isPageFinishedLoading();
     }
 
     public void onLongPress() {

@@ -260,6 +260,10 @@
         "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable-xxhdpi/ic_action_refresh_default.png"
     },
     {
+        "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/release/drawable_card_shape.xml.flat",
+        "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/drawable/card_shape.xml"
+    },
+    {
         "merged": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/res/merged/release/layout_dialog_license_item.xml.flat",
         "source": "/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/src/main/res/layout/dialog_license_item.xml"
     },

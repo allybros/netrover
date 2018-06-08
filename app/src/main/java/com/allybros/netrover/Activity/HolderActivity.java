@@ -36,26 +36,15 @@ public class HolderActivity extends Activity {
             finish();
             return;
         }
+    }
 
-        first = new Record();
-        first.setTitle(getString(R.string.album_untitled));
-        first.setURL(getIntent().getData().toString());
-        first.setTime(System.currentTimeMillis());
-
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                if (first != null && second == null) {
-                    Intent toService = new Intent(HolderActivity.this, HolderService.class);
-                    RecordUnit.setHolder(first);
-                    startService(toService);
-                    background = true;
-                }
-                HolderActivity.this.finish();
-            }
-        };
-        timer = new Timer();
-        timer.schedule(task, TIMER_SCHEDULE_DEFAULT);
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Intent resumeIntent = new Intent(this,BrowserActivity.class);
+        resumeIntent.putExtra("URL",getIntent().getDataString());
+        startActivity(resumeIntent);
+        finish();
     }
 
     @Override
@@ -65,7 +54,7 @@ public class HolderActivity extends Activity {
             return;
         }
 
-        if (timer != null) {
+        /*if (timer != null) {
             timer.cancel();
         }
 
@@ -82,7 +71,7 @@ public class HolderActivity extends Activity {
             startService(toService);
             background = true;
             finish();
-        }
+        }*/
     }
 
     @Override
@@ -101,6 +90,8 @@ public class HolderActivity extends Activity {
         background = false;
         super.onDestroy();
     }
+
+    /*
 
     private void showHolderDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(new NinjaContextWrapper(this));
@@ -150,5 +141,5 @@ public class HolderActivity extends Activity {
                 finish();
             }
         });
-    }
+    }*/
 }

@@ -102,4 +102,5 @@
   <com.google.ar.sceneform/>
   <com.google.ar.sceneform.ux/>
   <androidx.test.ext/>
+  <com.google.android.ads.consent/>
 </metadata>

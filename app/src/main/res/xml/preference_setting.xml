@@ -152,6 +152,8 @@
 
     </PreferenceCategory>
 
+
+
     <PreferenceCategory android:title="@string/setting_title_others">
 
         <Preference android:title="@string/setting_title_version"

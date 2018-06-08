@@ -132,6 +132,10 @@
     <color name="blue_700">#1976D2</color>
     <color name="blue_800">#1565C0</color>
     <color name="blue_900">#0D47A1</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_detailing">#eee</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
     <color name="dividers">#DADADA</color>
     <color name="gray_100">#F5F5F5</color>
     <color name="gray_200">#EEEEEE</color>
@@ -210,18 +214,16 @@
     <string name="app_name">
         NetRover
     </string>
-    <string name="app_scheme_http">
+    <string name="app_scheme_http" translatable="false">
         http
     </string>
-    <string name="app_scheme_https">
+    <string name="app_scheme_https" translatable="false">
         https
     </string>
-    <string name="app_version">
+    <string name="app_version" translatable="false">
         1.0.0
     </string>
-    <string name="bookmarks_filename">
-        NinjaBookmarks
-    </string>
+    <string name="bookmarks_filename">NetRoverBookmarks</string>
     <string name="clear_label">
         Clear
     </string>
@@ -305,88 +307,88 @@
     <string name="dialog_ua_hint">
         Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
     </string>
-    <string name="license_author_android_ago">
+    <string name="license_author_android_ago" translatable="false">
         Kiran Rao
     </string>
-    <string name="license_author_android_sliding_up_panel">
+    <string name="license_author_android_sliding_up_panel" translatable="false">
         Umano: News Read To You
     </string>
-    <string name="license_author_android_swipe_to_dismiss">
+    <string name="license_author_android_swipe_to_dismiss" translatable="false">
         Roman Nurik
     </string>
-    <string name="license_author_dynamic_grid">
+    <string name="license_author_dynamic_grid" translatable="false">
         askerov
     </string>
-    <string name="license_author_lightning">
+    <string name="license_author_lightning" translatable="false">
         Anthony Restaino
     </string>
-    <string name="license_author_ninja">
+    <string name="license_author_ninja" translatable="false">
         Matthew Lee
     </string>
-    <string name="license_author_typo_css">
+    <string name="license_author_typo_css" translatable="false">
         小鱼
     </string>
-    <string name="license_content_android_ago">
+    <string name="license_content_android_ago" translatable="false">
         Apache License Version 2.0
     </string>
-    <string name="license_content_android_sliding_up_panel">
+    <string name="license_content_android_sliding_up_panel" translatable="false">
         Apache License Version 2.0
     </string>
-    <string name="license_content_android_swipe_to_dismiss">
+    <string name="license_content_android_swipe_to_dismiss" translatable="false">
         Apache License Version 2.0
     </string>
-    <string name="license_content_dynamic_grid">
+    <string name="license_content_dynamic_grid" translatable="false">
         Apache License Version 2.0
     </string>
-    <string name="license_content_lightning">
+    <string name="license_content_lightning" translatable="false">
         Mozilla Public License Version 2.0
     </string>
-    <string name="license_content_ninja">
+    <string name="license_content_ninja" translatable="false">
         Apache License Version 2.0
     </string>
-    <string name="license_content_typo_css">
+    <string name="license_content_typo_css" translatable="false">
         The MIT License (MIT)
     </string>
-    <string name="license_title_android_ago">
+    <string name="license_title_android_ago" translatable="false">
         android-ago
     </string>
-    <string name="license_title_android_sliding_up_panel">
+    <string name="license_title_android_sliding_up_panel" translatable="false">
         Android Sliding Up Panel
     </string>
-    <string name="license_title_android_swipe_to_dismiss">
+    <string name="license_title_android_swipe_to_dismiss" translatable="false">
         Android Swipe-to-Dismiss Sample Code
     </string>
-    <string name="license_title_dynamic_grid">
+    <string name="license_title_dynamic_grid" translatable="false">
         DynamicGrid
     </string>
-    <string name="license_title_lightning">
+    <string name="license_title_lightning" translatable="false">
         Lightning Browser
     </string>
-    <string name="license_title_ninja">
+    <string name="license_title_ninja" translatable="false">
         Ninja
     </string>
-    <string name="license_title_typo_css">
+    <string name="license_title_typo_css" translatable="false">
         typo.css
     </string>
-    <string name="license_url_android_ago">
+    <string name="license_url_android_ago" translatable="false">
         http://git.io/vUrum
     </string>
-    <string name="license_url_android_sliding_up_panel">
+    <string name="license_url_android_sliding_up_panel" translatable="false">
         http://git.io/vUruG
     </string>
-    <string name="license_url_android_swipe_to_dismiss">
+    <string name="license_url_android_swipe_to_dismiss" translatable="false">
         http://git.io/vUruO
     </string>
-    <string name="license_url_dynamic_grid">
+    <string name="license_url_dynamic_grid" translatable="false">
         http://git.io/vTHZH
     </string>
-    <string name="license_url_lightning">
+    <string name="license_url_lightning" translatable="false">
         http://git.io/vUruk
     </string>
-    <string name="license_url_ninja">
+    <string name="license_url_ninja" translatable="false">
         http://git.io/vUrEh
     </string>
-    <string name="license_url_typo_css">
+    <string name="license_url_typo_css" translatable="false">
         http://git.io/vIyHD
     </string>
     <string name="list_empty">
@@ -413,6 +415,8 @@
     <string name="notification_content_holder">
         Click to View Pages
     </string>
+    <string name="permissions_description">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
+    <string name="permissions_needed_title">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
     <string name="readability_empty">
         Failed to load Readability, Please check your network connection.
     </string>
@@ -623,91 +627,91 @@
     <string name="setting_title_whitelist">
         Whitelist
     </string>
-    <string name="sp_ad_block">
+    <string name="sp_ad_block" translatable="false">
         SP_AD_BLOCK_9
     </string>
-    <string name="sp_anchor">
+    <string name="sp_anchor" translatable="false">
         SP_ANCHOR_9
     </string>
-    <string name="sp_clear_bookmarks">
+    <string name="sp_clear_bookmarks" translatable="false">
         SP_CLEAR_BOOKMARKS_9
     </string>
-    <string name="sp_clear_cache">
+    <string name="sp_clear_cache" translatable="false">
         SP_CLEAR_CACHE_9
     </string>
-    <string name="sp_clear_cookie">
+    <string name="sp_clear_cookie" translatable="false">
         SP_CLEAR_COOKIE_9
     </string>
-    <string name="sp_clear_form_data">
+    <string name="sp_clear_form_data" translatable="false">
         SP_CLEAR_FORM_DATA_9
     </string>
-    <string name="sp_clear_history">
+    <string name="sp_clear_history" translatable="false">
         SP_CLEAR_HISTORY_9
     </string>
-    <string name="sp_clear_passwords">
+    <string name="sp_clear_passwords" translatable="false">
         SP_CLEAR_PASSWORDS_9
     </string>
-    <string name="sp_clear_quit">
+    <string name="sp_clear_quit" translatable="false">
         SP_CLEAR_QUIT_9
     </string>
-    <string name="sp_cookies">
+    <string name="sp_cookies" translatable="false">
         SP_COOKIES_9
     </string>
-    <string name="sp_first">
+    <string name="sp_first" translatable="false">
         SP_FIRST_26
     </string>
-    <string name="sp_images">
+    <string name="sp_images" translatable="false">
         SP_IMAGES_9
     </string>
-    <string name="sp_javascript">
+    <string name="sp_javascript" translatable="false">
         SP_JAVASCRIPT_9
     </string>
-    <string name="sp_location">
+    <string name="sp_location" translatable="false">
         SP_LOCATION_9
     </string>
-    <string name="sp_multiple_windows">
+    <string name="sp_multiple_windows" translatable="false">
         SP_MULTIPLE_WINDOWS_9
     </string>
-    <string name="sp_notification_priority">
+    <string name="sp_notification_priority" translatable="false">
         SP_NOTIFICATION_PRIORITY_9
     </string>
-    <string name="sp_omnibox_control">
+    <string name="sp_omnibox_control" translatable="false">
         SP_OMNIBOX_CONTROL_9
     </string>
-    <string name="sp_passwords">
+    <string name="sp_passwords" translatable="false">
         SP_PASSWORDS_9
     </string>
-    <string name="sp_readability">
+    <string name="sp_readability" translatable="false">
         SP_READABILITY_9
     </string>
-    <string name="sp_readability_background">
+    <string name="sp_readability_background" translatable="false">
         SP_READABILITY_BACKGROUND_9
     </string>
-    <string name="sp_readability_token">
+    <string name="sp_readability_token" translatable="false">
         SP_READABILITY_TOKEN_9
     </string>
-    <string name="sp_rendering">
+    <string name="sp_rendering" translatable="false">
         SP_RENDERING_9
     </string>
-    <string name="sp_scroll_bar">
+    <string name="sp_scroll_bar" translatable="false">
         SP_SCROLL_BAR_9
     </string>
-    <string name="sp_search_engine">
+    <string name="sp_search_engine" translatable="false">
         SP_SEARCH_ENGINE_9
     </string>
-    <string name="sp_search_engine_custom">
+    <string name="sp_search_engine_custom" translatable="false">
         SP_SEARCH_ENGINE_CUSTOM_9
     </string>
-    <string name="sp_text_reflow">
+    <string name="sp_text_reflow" translatable="false">
         SP_TEXT_REFLOW_9
     </string>
-    <string name="sp_user_agent">
+    <string name="sp_user_agent" translatable="false">
         SP_USER_AGENT_9
     </string>
-    <string name="sp_user_agent_custom">
+    <string name="sp_user_agent_custom" translatable="false">
         SP_USER_AGENT_CUSTOM_9
     </string>
-    <string name="sp_volume">
+    <string name="sp_volume" translatable="false">
         SP_VOLUME_9
     </string>
     <string name="toast_add_bookmark_failed">
@@ -830,18 +834,14 @@
     <string name="token_add">
         Add
     </string>
-    <string name="token_desc">
-        Go to https://www.readability.com/developers/api to get your own Readability token
-    </string>
+    <string name="token_desc">Go to https://www.readability.com/developers/api to get your own Readability Token</string>
     <string name="token_edit_hint">
         Readability token
     </string>
     <string name="token_label">
         Token
     </string>
-    <string name="whilelist_filename">
-        NinjaWhitelist
-    </string>
+    <string name="whilelist_filename">NetRoverWhitelist</string>
     <string name="whitelist_add">
         Add
     </string>

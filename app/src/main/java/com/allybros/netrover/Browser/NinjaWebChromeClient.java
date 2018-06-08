@@ -77,12 +77,6 @@ public class NinjaWebChromeClient extends WebChromeClient {
         return true;
     }
 
-    /**
-     * TODO: ?support this method
-     * @link http://developer.android.com/reference/android/webkit/WebChromeClient.html#onGeolocationPermissionsShowPrompt%28java.lang.String,%20android.webkit.GeolocationPermissions.Callback%29
-     * @param origin
-     * @param callback
-     */
     @Override
     public void onGeolocationPermissionsShowPrompt(String origin, GeolocationPermissions.Callback callback) {
         super.onGeolocationPermissionsShowPrompt(origin, callback);
