@@ -11,12 +11,10 @@
     </string>
 
     <!-- Info -->
-    <string name="app_name">
+    <string name="app_name" translatable="false">
         NetRover
     </string>
-    <string name="app_version" translatable="false">
-        1.0.0
-    </string>
+    <string name="app_version" translatable="false">1.0.1</string>
 
     <!-- AndroidSlidingUpPanel -->
     <string name="license_title_android_sliding_up_panel" translatable="false">

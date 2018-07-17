@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="setting_title_privacy">Privacy</string>
-    <string name="setting_title_accessibility">Accessibility</string>
+    <string name="setting_title_privacy">Privacy and Data</string>
+    <string name="setting_title_accessibility">Layout and Accessibility</string>
+    <string name="goIncognito">Don\'t Track Mode Enabled</string>
+    <string name="exitIncognito">Incognito Mode Disabled</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="use_menu">Use Menu</string>
+    <string name="home_page">Home Page</string>
+    <string name="private_browsing">Private Browsing</string>
+    <string name="use_menu_description">Use Menu key or overflow icon in the tab drawer. You will see related options like taking whole screenshot of webpages.</string>
+    <string name="gotit">GOT IT!</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_history_message">Are you sure you really want to delete history data?</string>
+    <string name="slide_1_content">Welcome to NetRover! Finally you get a browser which cares you and your privacy!</string>
 </resources>

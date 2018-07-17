@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

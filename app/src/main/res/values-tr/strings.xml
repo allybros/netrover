@@ -78,7 +78,7 @@
     <string name="setting_title_scroll_bar">Kaydırma Çubuğu</string>
     <string name="setting_summary_scroll_bar">Web Sayfalarında Kaydırma Çubuğunu Göster veya Gizle</string>
     <string name="setting_title_text_reflow">Tekrarlanan Metin Akışı</string>
-    <string name="setting_summary_text_reflow">Tekrarlanan MEtin Akışını Etkinleştir</string>
+    <string name="setting_summary_text_reflow">Tekrarlanan Metin Akışını Etkinleştir</string>
     <string name="setting_summary_user_agent_default">Varsayılan</string>
     <string name="setting_summary_rendering_default">Varsayılan</string>
     <string name="setting_title_user_agent">Kullanıcı Ortamı (User Agent)</string>
@@ -125,7 +125,7 @@
     <string name="toast_delete_successful">Başarıyla Silindi</string>
     <string name="toast_domain_already_exists">Alan Adı Zaten Bulunmakta</string>
     <string name="toast_double_taps_quit">Çıkmak İçin Tekrar Basın</string>
-    <string name="toast_emoji">Penguen</string>
+    <string name="toast_emoji">Sürüm 1.0.1 (Penguen)</string>
     <string name="toast_export_bookmarks_successful">Yer İminin Aktarıldığı Dosya:</string>
     <string name="toast_export_bookmarks_failed">Yer İmi Aktarılırken Sorun Oluştu</string>
     <string name="toast_export_whitelist_successful">Beyaz Listenin Aktarıldığı Dosya:</string>
@@ -159,6 +159,24 @@
     <string name="token_desc">Kendi Readability Token\' nınızı almak için https://www.readability.com/developers/api  gidiniz</string>
     <string name="permissions_needed_title">Uygulama İzinleri</string>
     <string name="permissions_description">NetRover\' ın cihazınıza veri kaydetmesi ve okuması için dosyalarınıza erişmesi ve web sayfalarını bilgilendirmesi için yaklaşık konumunuzu bilmesi gerekiyor.</string>
-    <string name="setting_title_privacy">Privacy</string>
-    <string name="setting_title_accessibility">Accessibility</string>
+    <string name="setting_title_privacy">Gizlililik ve Veri</string>
+    <string name="setting_title_accessibility">Erişilebilirlik ve Görünüm</string>
+    <string name="goIncognito">Gizli Mod Etkin</string>
+    <string name="exitIncognito">Gizli Mod Devredışı</string>
+    <string name="next">İleri</string>
+    <string name="skip">Atla</string>
+    <string name="use_menu">Menü</string>
+    <string name="home_page">Başlangıç Sayfası</string>
+    <string name="private_browsing">Gizli Gezinti</string>
+    <string name="use_menu_description">Bulunduğunuz sayfaya özel seçenekleri görmek için menü tuşuna veya sekme çekmecesindeki seçenekler tuşuna dokunun.</string>
+    <string name="gotit">Anladım</string>
+    <string name="yes">Evet</string>
+    <string name="cancel">İptal</string>
+    <string name="clear_history">Geçmişi Temizle</string>
+    <string name="clear_history_message">Tüm geçmiş verilerini silmek istediğinize emin misiniz?</string>
+    <string name="clear_bookmarks">Yer İmlerini Sil</string>
+    <string name="clear_bookmarks_message">Tüm yer imlerini silmek isteiğinize emin misiniz?</string>
+    <string name="slide_1_content">NetRover\' a hoş geldiniz.  Sonunda size önem veren hızlı, reklamsız, özgür bir web tarayıcısına kavuştunuz.</string>
+    <string name="incognito_description">Gizli gezinti özelliğini kullanarak geçmiş özelliğini kapatın ve ardınızda iz bırakmadan özgürce gezinin. Gizli gezintiye geçmek için göz simgesine dokunun. Gizli gezinti modundayken iken sekmeler mor gözükür.</string>
+    <string name="home_description">Başlangıç sayfasına sık ziyaret ettiğiniz sayfaları ekleyebilir, bunları düzenleyebilirsiniz. Menüden başlangıç sayfasına ekle demeniz yeterli.</string>
 </resources>

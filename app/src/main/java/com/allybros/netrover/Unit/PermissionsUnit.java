@@ -13,24 +13,42 @@ import android.widget.Toast;
 
 import com.allybros.netrover.R;
 
+import java.security.Permission;
+
+import static android.content.pm.PackageManager.PERMISSION_GRANTED;
+
 /**
  * Created by Umut Can Alaçam on 27.05.2018.
  **/
 
-public class PermissionsUnit {
+public class PermissionsUnit implements ActivityCompat.OnRequestPermissionsResultCallback{
 
     public static String[] permissions = {  Manifest.permission.WRITE_EXTERNAL_STORAGE, // id: 0
                                             Manifest.permission.READ_EXTERNAL_STORAGE,  // id: 1
                                             Manifest.permission.ACCESS_COARSE_LOCATION, // id: 2
-                                            Manifest.permission.ACCESS_FINE_LOCATION    }; // id: 3
+                                            Manifest.permission.ACCESS_FINE_LOCATION    }; // id: intro_3
 
     public static final int WRITE_EXTERNAL_STORAGE = 0, //Permission idP's
             READ_EXTERNAL_STORAGE = 1,
             ACCESS_COARSE_LOCATION = 2,
             ACCESS_FINE_LOCATION = 3;
 
+    public static boolean[] isGranted = { false,false,false,false };
+
+    private static volatile boolean listen = false;
+
+    public static void updatePermissions(Activity activity){
+        for (int idP = 0; idP < permissions.length; idP++){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                isGranted[idP] = activity.checkSelfPermission(permissions[idP])== PERMISSION_GRANTED;
+            }
+        }
+    }
+
+
+
     public static void firstTimePermissions(final Activity activity){
-        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.M){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             AlertDialog.Builder alertDialog;
             alertDialog = new AlertDialog.Builder(activity);
             alertDialog.setTitle(R.string.permissions_needed_title);
@@ -47,24 +65,26 @@ public class PermissionsUnit {
             });
             alertDialog.show();         //Explain to user why we need these permissions.
         }
-
     }
 
     public static boolean permissionsCheck(Activity activity, final int idP) {
         final String[] currentPermission = {permissions[idP]};
         int check = ActivityCompat.checkSelfPermission(activity, currentPermission[0]);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && check != PackageManager.PERMISSION_GRANTED) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && check != PERMISSION_GRANTED) {
             //If new android and permission not granted
             Log.d("Request permission",permissions[idP]);
             ActivityCompat.requestPermissions(activity, currentPermission, idP);
-            if (ActivityCompat.checkSelfPermission(activity, currentPermission[0]) == PackageManager.PERMISSION_GRANTED) {
+            check = ActivityCompat.checkSelfPermission(activity, currentPermission[0]);
+            listen = false;
+            if (check == PERMISSION_GRANTED) {
                 Log.d("Granted permission:",permissions[idP]);
                 return true;
             } else {
                 Log.d("Deny Permission:",permissions[idP]);
                 return false;
             }
+
         } else {
             Log.d("Already granted:",permissions[idP]);
             return true;
@@ -79,7 +99,7 @@ public class PermissionsUnit {
         }
         ActivityCompat.requestPermissions(activity,permissionsList,1000);
         for (int i=0; i<idPs.length; i++){
-            if (ActivityCompat.checkSelfPermission(activity, permissionsList[i]) == PackageManager.PERMISSION_GRANTED)
+            if (ActivityCompat.checkSelfPermission(activity, permissionsList[i]) == PERMISSION_GRANTED)
                 permissionResults[i] = true;
             else
                 permissionResults[i] = false;
@@ -88,4 +108,8 @@ public class PermissionsUnit {
     }
 
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+       listen = true;
+    }
 }

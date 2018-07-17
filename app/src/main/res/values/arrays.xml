@@ -13,9 +13,11 @@
     <string-array name="list_menu">
         <item>New tab</item>
         <item>Copy link</item>
+        <item>Relayout</item>
         <item>Share</item>
         <item>Edit</item>
         <item>Delete</item>
+
     </string-array>
 
     <!-- Main -->
@@ -26,7 +28,6 @@
         <item>Screenshot</item>
         <item>Readability</item>
         <item>Share</item>
-        <item>Relayout</item>
         <item>Quit</item>
     </string-array>
 

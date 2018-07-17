@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.allybros.netrover.Activity.BrowserActivity;
 import com.allybros.netrover.Browser.AlbumController;
 import com.allybros.netrover.Browser.BrowserController;
 import com.allybros.netrover.R;
@@ -88,7 +90,8 @@ public class Album {
     }
 
     public void activate() {
-        albumView.setBackgroundResource(R.drawable.album_shape_blue);
+        if (BrowserActivity.isIncognito()) albumView.setBackgroundResource(R.drawable.album_shape_inco);
+        else albumView.setBackgroundResource(R.drawable.album_shape_blue);
     }
 
     public void deactivate() {

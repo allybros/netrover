@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.allybros.netrover";
   public static final String BUILD_TYPE = "release";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 20180528;
-  public static final String VERSION_NAME = "1.0.0";
+  public static final int VERSION_CODE = 20180630;
+  public static final String VERSION_NAME = "1.0.1";
 }

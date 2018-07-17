@@ -13,6 +13,7 @@
     <string-array name="list_menu">
         <item>Yeni Sekme</item>
         <item>Bağlantıyı Kopyala</item>
+        <item>Taşı</item>
         <item>Paylaş</item>
         <item>Düzenle</item>
         <item>Sil</item>
@@ -26,7 +27,6 @@
         <item>Ekran Görüntüsü</item>
         <item>Readability</item>
         <item>Paylaş</item>
-        <item>Görünüm</item>
         <item>Çıkış</item>
     </string-array>
 

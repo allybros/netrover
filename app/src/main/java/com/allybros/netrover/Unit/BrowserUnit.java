@@ -19,7 +19,6 @@ import com.allybros.netrover.View.NinjaToast;
 import java.io.*;
 import java.net.URLEncoder;
 import java.util.*;
-import java.util.regex.Pattern;
 
 public class BrowserUnit {
     public static final int PROGRESS_MAX = 100;
@@ -42,10 +41,6 @@ public class BrowserUnit {
     public static final String BOOKMARK_TITLE = "{title}";
     public static final String BOOKMARK_URL = "{url}";
     public static final String BOOKMARK_TIME = "{time}";
-    public static final String INTRODUCTION_EN = "netrover_introduction_en.html";
-    public static final String INTRODUCTION_ZH = "netrover_introduction_zh.html";
-    public static final String INTRODUCTION_TR = "netrover_introduction_tr.html";
-
     public static final String SEARCH_ENGINE_GOOGLE = "https://www.google.com/search?q=";
     public static final String SEARCH_ENGINE_DUCKDUCKGO = "https://duckduckgo.com/?q=";
     public static final String SEARCH_ENGINE_STARTPAGE = "https://startpage.com/do/search?query=";
@@ -74,24 +69,13 @@ public class BrowserUnit {
         }
 
         url = url.toLowerCase(Locale.getDefault());
-        if (url.startsWith(URL_ABOUT_BLANK)
+        if (    url.startsWith(URL_ABOUT_BLANK)
                 || url.startsWith(URL_SCHEME_MAIL_TO)
-                || url.startsWith(URL_SCHEME_FILE)) {
+                || url.startsWith(URL_SCHEME_FILE) ){
             return true;
         }
 
-        String regex = "^((ftp|http|https|intent)?://)"                      // support scheme
-                + "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" // ftp的user@
-                + "(([0-9]{1,3}\\.){3}[0-9]{1,3}"                            // IP形式的URL -> 199.194.52.184
-                + "|"                                                        // 允许IP和DOMAIN（域名）
-                + "([0-9a-z_!~*'()-]+\\.)*"                                  // 域名 -> www.
-                + "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]\\."                    // 二级域名
-                + "[a-z]{2,6})"                                              // first level domain -> .com or .museum
-                + "(:[0-9]{1,4})?"                                           // 端口 -> :80
-                + "((/?)|"                                                   // a slash isn't required if there is no file name
-                + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
-        Pattern pattern = Pattern.compile(regex);
-        return pattern.matcher(url).matches();
+        return android.util.Patterns.WEB_URL.matcher(url).matches();
     }
 
     public static String queryWrapper(Context context, String query) {
@@ -124,7 +108,7 @@ public class BrowserUnit {
         } catch (UnsupportedEncodingException u) {}
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        String custom = sp.getString(context.getString(R.string.sp_search_engine_custom), SEARCH_ENGINE_GOOGLE);
+        String custom = sp.getString(context.getString(R.string.sp_search_engine_customgo), SEARCH_ENGINE_GOOGLE);
         final int i = Integer.valueOf(sp.getString(context.getString(R.string.sp_search_engine), "0"));
         switch (i) {
             case 0:

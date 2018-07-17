@@ -1,30 +1,26 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-112:12
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services-ads:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-15.0.1.aar/9c968e771703eeebb6713fe88b90e69e/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b7798ede6890101e3fab34330a3261e4/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/48abb021b8bdc2d400568d5ba93147bb/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/509af0d5a19518d154f778c480b2cef7/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:customtabs:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/35d3a4e9e5f4ef36499942c4c9118aba/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/213922ecdf46e1d06a900e1c90aaa391/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/a3b35245ec0f750e6b1ce64d92633eb0/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/57ab542bdf2db2938fbc0888564cce2f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/2b852079606a6223be42c3b597ddf3aa/AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-112:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-112:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
 	package
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml
@@ -43,28 +39,22 @@ uses-sdk
 ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:8:5-44
 INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:8:5-44
 INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:8:5-44
+MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:21:5-23:78
-MERGED from [com.google.android.gms:play-services-ads:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-15.0.1.aar/9c968e771703eeebb6713fe88b90e69e/AndroidManifest.xml:21:5-23:62
-MERGED from [com.google.android.gms:play-services-ads:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-15.0.1.aar/9c968e771703eeebb6713fe88b90e69e/AndroidManifest.xml:21:5-23:62
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b7798ede6890101e3fab34330a3261e4/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b7798ede6890101e3fab34330a3261e4/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/48abb021b8bdc2d400568d5ba93147bb/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/48abb021b8bdc2d400568d5ba93147bb/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/509af0d5a19518d154f778c480b2cef7/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/509af0d5a19518d154f778c480b2cef7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/35d3a4e9e5f4ef36499942c4c9118aba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/35d3a4e9e5f4ef36499942c4c9118aba/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/213922ecdf46e1d06a900e1c90aaa391/AndroidManifest.xml:21:5-23:60
@@ -75,14 +65,12 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/umut/.gradle/cach
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/57ab542bdf2db2938fbc0888564cce2f/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/2b852079606a6223be42c3b597ddf3aa/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/2b852079606a6223be42c3b597ddf3aa/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/AndroidManifest.xml:20:5-22:41
 INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:8:5-44
 INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:8:5-44
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:8:5-44
@@ -93,14 +81,10 @@ INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/
 		INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:12:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:12:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
@@ -119,32 +103,24 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:16:5-81
 	android:name
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:16:22-78
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:17:5-75
-	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:17:22-72
 application
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:19:5-110:19
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:18:5-109:19
+MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:25:5-29:19
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b7798ede6890101e3fab34330a3261e4/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/b7798ede6890101e3fab34330a3261e4/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/48abb021b8bdc2d400568d5ba93147bb/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-gass:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-gass-15.0.1.aar/48abb021b8bdc2d400568d5ba93147bb/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/509af0d5a19518d154f778c480b2cef7/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/509af0d5a19518d154f778c480b2cef7/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:customtabs:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/35d3a4e9e5f4ef36499942c4c9118aba/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:customtabs:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/35d3a4e9e5f4ef36499942c4c9118aba/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-fragment:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/213922ecdf46e1d06a900e1c90aaa391/AndroidManifest.xml:25:5-29:19
@@ -155,156 +131,158 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/umut/.gradle/cach
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/57ab542bdf2db2938fbc0888564cce2f/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:25:5-29:19
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/2b852079606a6223be42c3b597ddf3aa/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-15.0.1.aar/2b852079606a6223be42c3b597ddf3aa/AndroidManifest.xml:22:5-20
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/AndroidManifest.xml:24:5-28:19
 	android:enabled
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:21:9-31
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:20:9-31
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:23:9-41
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:22:9-41
 	android:largeHeap
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:24:9-33
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:23:9-33
 	android:icon
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:22:9-45
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:21:9-45
 	android:allowBackup
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:20:9-35
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:19:9-35
 activity#com.allybros.netrover.Activity.HolderActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:27:9-42:20
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:26:9-41:20
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:29:13-45
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:28:13-45
 	android:launchMode
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:30:13-44
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:29:13-44
 	android:noHistory
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:30:13-37
 	android:theme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:32:13-59
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:31:13-59
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:28:13-52
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:27:13-52
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:33:13-41:29
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:32:13-40:29
 action#android.intent.action.VIEW
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:34:17-69
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.DEFAULT
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:36:17-76
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:36:27-73
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:35:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:37:17-78
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:36:17-78
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:37:27-75
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:36:27-75
 data
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:39:17-66
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:38:17-66
 	android:scheme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:39:23-63
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:38:23-63
 service#com.allybros.netrover.Service.HolderService
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:45:9-48:56
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:44:9-47:56
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:48:13-45
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:47:13-45
 	android:icon
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:47:13-49
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:46:13-49
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:46:13-50
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:45:13-50
 activity#com.allybros.netrover.Activity.BrowserActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:51:9-69:20
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:50:9-68:20
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:54:13-45
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:53:13-45
 	android:launchMode
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:55:13-48
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:54:13-48
 	android:windowSoftInputMode
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:57:13-55
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:56:13-55
 	android:configChanges
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:53:13-74
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:52:13-74
 	android:theme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:56:13-56
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:55:13-56
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:52:13-53
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:51:13-53
 intent-filter#android.intent.action.MAIN+android.intent.action.WEB_SEARCH+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:58:13-64:29
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:57:13-63:29
 action#android.intent.action.MAIN
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:59:17-69
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:58:17-69
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:59:25-66
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:58:25-66
 action#android.intent.action.WEB_SEARCH
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:60:17-75
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:59:17-75
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:60:25-72
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:59:25-72
 category#android.intent.category.LAUNCHER
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:63:17-77
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:62:17-77
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:63:27-74
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:62:27-74
 meta-data#android.app.searchable
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:66:13-68:64
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:65:13-67:64
 	android:resource
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:68:17-51
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:67:17-51
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:67:17-54
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:66:17-54
 activity#com.allybros.netrover.Activity.ReadabilityActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:72:9-75:72
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:71:9-74:72
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:74:13-54
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:73:13-54
 	android:theme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:75:13-60
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:74:13-60
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:73:13-57
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:72:13-57
 activity#com.allybros.netrover.Activity.SettingActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:78:9-81:68
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:77:9-80:68
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:80:13-50
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:79:13-50
 	android:theme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:81:13-56
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:80:13-56
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:79:13-53
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:78:13-53
 activity#com.allybros.netrover.Activity.WhitelistActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:84:9-87:70
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:83:9-86:70
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:86:13-52
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:85:13-52
 	android:theme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:87:13-58
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:86:13-58
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:85:13-55
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:84:13-55
 activity#com.allybros.netrover.Activity.TokenActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:90:9-93:66
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:89:9-92:66
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:92:13-48
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:91:13-48
 	android:theme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:93:13-54
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:92:13-54
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:91:13-51
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:90:13-51
 activity#com.allybros.netrover.Activity.ClearActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:96:9-99:66
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:95:9-98:66
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:98:13-48
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:97:13-48
 	android:theme
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:99:13-54
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:98:13-54
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:97:13-51
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:96:13-51
 service#com.allybros.netrover.Service.ClearService
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:102:9-105:56
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:101:9-104:56
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:105:13-45
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:104:13-45
 	android:icon
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:104:13-49
-	android:name
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:103:13-49
+	android:name
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:102:13-49
 activity#com.allybros.netrover.Activity.IntroActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:107:9-108:54
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:106:9-107:54
 	android:label
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:108:19-51
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:107:19-51
 	android:name
-		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:107:19-57
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:106:19-57
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-v4:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-v4:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:customtabs:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/35d3a4e9e5f4ef36499942c4c9118aba/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:customtabs:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/35d3a4e9e5f4ef36499942c4c9118aba/AndroidManifest.xml:23:9-25:38
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-media-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-fragment:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/213922ecdf46e1d06a900e1c90aaa391/AndroidManifest.xml:26:9-28:38
@@ -316,25 +294,9 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/umut/.gradle/cach
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:27:13-51
-activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:29:9-33:64
-	android:exported
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:32:13-37
-	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:31:13-122
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:33:13-61
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-15.0.1.aar/2b5fb53c52075773f9896b1708b966ed/AndroidManifest.xml:30:13-65
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:23:9-25:69
-	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:25:13-66
-	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/umut/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/a241c7bf62d2fc1360ad82973b18b865/AndroidManifest.xml:24:13-58
+		ADDED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:27:13-51
 meta-data#android.arch.lifecycle.VERSION
 ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/AndroidManifest.xml:25:9-27:47
 	android:value

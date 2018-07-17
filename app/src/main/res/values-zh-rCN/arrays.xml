@@ -13,6 +13,7 @@
     <string-array name="list_menu">
         <item>新建标签</item>
         <item>拷贝链接</item>
+        <item>Relayout</item>
         <item>分享</item>
         <item>编辑</item>
         <item>删除</item>

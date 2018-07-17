@@ -2,8 +2,13 @@ package com.allybros.netrover.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.preference.PreferenceManager;
+import android.webkit.WebSettings;
+
+import com.allybros.netrover.Activity.BrowserActivity;
 import com.allybros.netrover.Unit.RecordUnit;
 import com.allybros.netrover.View.GridItem;
 
@@ -51,7 +56,8 @@ public class RecordAction {
     }
 
     public boolean addHistory(Record record) {
-        if (record == null
+        if (    BrowserActivity.isIncognito()
+                ||record == null
                 || record.getTitle() == null
                 || record.getTitle().trim().isEmpty()
                 || record.getURL() == null
@@ -68,6 +74,21 @@ public class RecordAction {
 
         return true;
     }
+    public boolean saveRecentTabs(Record record) {
+        if (record == null
+                || record.getURL() == null
+                || record.getURL().trim().isEmpty()
+                ) {
+            return false;
+        }
+
+        ContentValues values = new ContentValues();
+        values.put(RecordUnit.COLUMN_URL, record.getURL().trim());
+        values.put(RecordUnit.COLUMN_ORDINAL, record.getURL().trim());
+        database.insert(RecordUnit.TABLE_RECENT_TABS, null, values);
+        return true;
+    }
+
 
     public boolean addDomain(String domain) {
         if (domain == null || domain.trim().isEmpty()) {
@@ -419,6 +440,35 @@ public class RecordAction {
                 null,
                 null,
                 RecordUnit.COLUMN_TIME + " desc"
+        );
+
+        if (cursor == null) {
+            return list;
+        }
+
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            list.add(getRecord(cursor));
+            cursor.moveToNext();
+        }
+        cursor.close();
+
+        return list;
+    }
+    public List<Record> listRecentTabs() {
+        List<Record> list = new ArrayList<>();
+
+        Cursor cursor = database.query(
+                RecordUnit.TABLE_HISTORY,
+                new String[] {
+                        RecordUnit.COLUMN_URL,
+                        RecordUnit.COLUMN_ORDINAL
+                },
+                null,
+                null,
+                null,
+                null,
+                RecordUnit.COLUMN_ORDINAL
         );
 
         if (cursor == null) {

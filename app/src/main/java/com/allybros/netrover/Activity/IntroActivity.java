@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.os.Build;
@@ -22,7 +23,14 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.allybros.netrover.Database.RecordAction;
 import com.allybros.netrover.R;
+import com.allybros.netrover.Unit.BrowserUnit;
+import com.allybros.netrover.Unit.PermissionsUnit;
+import com.allybros.netrover.Unit.ViewUnit;
+import com.allybros.netrover.View.GridItem;
+import com.allybros.netrover.View.NinjaToast;
+import com.allybros.netrover.View.NinjaWebView;
 
 public class IntroActivity extends Activity {
 
@@ -41,6 +49,7 @@ public class IntroActivity extends Activity {
     private int[] layouts;
 
     NetRoverPagerAdapter netRoverPagerAdapter;
+    static boolean isCompleted = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +77,7 @@ public class IntroActivity extends Activity {
         browserActivity = new Intent(IntroActivity.this, BrowserActivity.class);
         preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
+
         // adding bottom dots
         addBottomDots(0);
         changeStatusBarColor();
@@ -83,6 +93,9 @@ public class IntroActivity extends Activity {
             @Override
             public void onPageSelected(int position) {
                 addBottomDots(position);
+                if (position == layouts.length -1){
+                    btnNext.setText(getResources().getString(R.string.gotit));
+                }
             }
 
             @Override
@@ -92,10 +105,15 @@ public class IntroActivity extends Activity {
         });
 
 
+        PermissionsUnit.firstTimePermissions(IntroActivity.this);
+
+
+
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 preferences.edit().putBoolean(getString(R.string.sp_first), false).apply();
+                isCompleted = true;
                 startActivity(browserActivity);
                 finish();
             }
@@ -111,6 +129,7 @@ public class IntroActivity extends Activity {
                 }
                 else {
                     preferences.edit().putBoolean(getString(R.string.sp_first), false).apply();
+                    isCompleted = true;
                     startActivity(browserActivity);
                     finish();
                 }

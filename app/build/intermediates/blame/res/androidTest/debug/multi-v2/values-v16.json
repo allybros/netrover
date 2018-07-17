@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

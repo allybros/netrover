@@ -13,6 +13,7 @@
     <string-array name="list_menu">
         <item>Nouvel onglet</item>
         <item>Copier le lien</item>
+        <item>Relayout</item>
         <item>Partager</item>
         <item>Modifier</item>
         <item>Supprimer</item>

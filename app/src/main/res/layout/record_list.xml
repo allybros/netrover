@@ -6,11 +6,54 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
-    <ListView android:id="@+id/record_list"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:drawSelectorOnTop="true">
-    </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/background_dark"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:elevation="24dp">
+
+                <TextView
+                    android:id="@+id/record_list_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="Title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/record_list_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/transparent"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_action_delete" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/record_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="true" />
+
+        </LinearLayout>
+
 
     <TextView android:id="@+id/record_list_empty"
               android:layout_width="match_parent"

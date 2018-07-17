@@ -1,19 +1,4 @@
-#Fri Jun 08 09:03:54 EET 2018
-path.1=classes.dex
+#Sat Jun 30 12:42:56 EET 2018
+base.0=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/56
 path.0=classes.dex
-renamed.5=classes6.dex
-renamed.4=classes5.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/146
-base.4=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/149
-base.3=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/148
-base.2=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/145
-base.1=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/144
-base.0=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/dexMerger/debug/147
-path.5=classes.dex
-path.4=classes.dex
-path.3=classes.dex
-path.2=classes.dex

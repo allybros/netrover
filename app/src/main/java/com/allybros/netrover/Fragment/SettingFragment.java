@@ -89,7 +89,7 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
         tabPosition.setSummary(summary);
 
         vcEntries = getResources().getStringArray(R.array.setting_entries_volume_control);
-        summary = vcEntries[Integer.valueOf(sp.getString(getString(R.string.sp_volume), "3"))];
+        summary = vcEntries[Integer.valueOf(sp.getString(getString(R.string.sp_volume), "intro_3"))];
         volumeControl = (ListPreference) findPreference(getString(R.string.sp_volume));
         volumeControl.setSummary(summary);
 
@@ -155,9 +155,6 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
             case R.string.setting_title_license:
                 showLicenseDialog();
                 break;
-            case R.string.setting_title_donation:
-                showDonationDialog();
-                break;
             default:
                 break;
         }
@@ -183,7 +180,7 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
             tabPosition.setSummary(summary);
             NinjaToast.show(getActivity(), R.string.toast_need_restart);
         } else if (key.equals(getString(R.string.sp_volume))) {
-            String summary = vcEntries[Integer.valueOf(sp.getString(key, "1"))];
+            String summary = vcEntries[Integer.valueOf(sp.getString(key, "2"))];
             volumeControl.setSummary(summary);
         } else if (key.equals(getString(R.string.sp_user_agent))) {
             int num = Integer.valueOf(sp.getString(key, "0"));
@@ -238,15 +235,4 @@ public class SettingFragment extends PreferenceFragment implements SharedPrefere
         builder.create().show();
     }
 
-    private void showDonationDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setCancelable(true);
-
-        FrameLayout layout = (FrameLayout) getActivity().getLayoutInflater().inflate(R.layout.dialog_desc, null, false);
-        TextView textView = (TextView) layout.findViewById(R.id.dialog_desc);
-        textView.setText(R.string.dialog_content_donation);
-
-        builder.setView(layout);
-        builder.create().show();
-    }
 }

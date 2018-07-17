@@ -3,73 +3,183 @@
 
     <item
         is-multidex="false"
-        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/f79ee4a1ec37338f314c2ae9b92311d1/jars/classes.jar"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/57ab542bdf2db2938fbc0888564cce2f/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3e4790e045a66cc5ed1b81475b6d3381/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/3836d43ac6f287b02ad18771a85e84cc/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a37fc31c5ceeaa4532a37358add1b189d8db4af1">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/509af0d5a19518d154f778c480b2cef7/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f46121a7c3b3ba958fc27c39447ae205be23ac4a">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="58b12bdb21a84f22e0dc3b047aeceb0a546b1b44">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/a3b35245ec0f750e6b1ce64d92633eb0/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/328c988f5d8527087c5201d12d43ed6c/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/1.jar" />
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/37252d0a8fce661a9a096d422fe87b34/jars/classes.jar"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/2001d2b8b27f59a84b4cde4c301362f9/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/4.jar" />
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/7.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/44f154eb414b05d90dbd4264b9e26cf0/jars/classes.jar"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/6.jar" />
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/16.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/1b2c09edfef725aab81dd58623c5fa3e/jars/classes.jar"
+        jar="/home/umut/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/3.jar" />
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/18.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/3c9804bfee9f786eaa8948dc4a3452c2/jars/classes.jar"
+        jar="/home/umut/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.0/931532e953a477f876f2de18c2e7f16eee01078f/constraint-layout-solver-1.1.0.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
-        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/5.jar" />
+        sha1="931532e953a477f876f2de18c2e7f16eee01078f">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/15.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/a9a73a2a752e4725be43499ba6503b1a/jars/classes.jar"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/ac5b5701f5856bafc9e51801688883fc/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
-        sha1="9935891f23923f39d002087085d9696568a9f657">
-        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/2.jar" />
+        sha1="b12cd9c87c3dfb012a911b6e38d2444ed0a65e1f">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/umut/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="16"
         optimize="true"
         revision="26.0.2"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/7.jar" />
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/213922ecdf46e1d06a900e1c90aaa391/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/umut/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/transforms/preDex/release/17.jar" />
     </item>
 
 </items>

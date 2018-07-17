@@ -7,6 +7,7 @@ public class RecordUnit {
     public static final String TABLE_HISTORY = "HISTORY";
     public static final String TABLE_WHITELIST = "WHITELIST";
     public static final String TABLE_GRID = "GRID";
+    public static final String TABLE_RECENT_TABS = "RECENT_TABS";
 
     public static final String COLUMN_TITLE = "TITLE";
     public static final String COLUMN_URL = "URL";
@@ -43,6 +44,12 @@ public class RecordUnit {
             + " " + COLUMN_TITLE + " text,"
             + " " + COLUMN_URL + " text,"
             + " " + COLUMN_FILENAME + " text,"
+            + " " + COLUMN_ORDINAL + " integer"
+            + ")";
+    public static final String CREATE_RECENT_TABS = "CREATE TABLE "
+            + TABLE_RECENT_TABS
+            + " ("
+            + " " + COLUMN_URL + " text,"
             + " " + COLUMN_ORDINAL + " integer"
             + ")";
 

@@ -1,31 +1,31 @@
 #Internal package file, do not edit.
-#Sun Jun 03 20:24:54 EET 2018
-2.base=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
+#Sat Jun 09 00:01:07 EET 2018
+2.base=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
 5.set=ASSET
-0.path=netrover_introduction_zh.html
+0.path=netrover_introduction_en.html
 2.baseType=DIRECTORY
-3.base=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
+3.base=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
 2.set=ASSET
-1.path=typo.css
-4.base=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
+1.path=hosts.txt
+4.base=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
 count=7
 5.baseType=DIRECTORY
-2.path=netrover_introduction_tr.html
-5.base=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
+2.path=netrover_introduction_en.md
+5.base=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
 4.set=ASSET
-3.path=hosts.txt
-6.base=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
+3.path=netrover_introduction_zh.html
+6.base=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
 3.baseType=DIRECTORY
 1.set=ASSET
-4.path=netrover_introduction_en.html
+4.path=netrover_introduction_zh.md
 6.set=ASSET
 1.baseType=DIRECTORY
 6.baseType=DIRECTORY
-5.path=netrover_introduction_zh.md
-0.base=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
+5.path=typo.css
+0.base=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
 0.baseType=DIRECTORY
 3.set=ASSET
-6.path=netrover_introduction_en.md
-1.base=/home/umut/Masaüstü/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
+6.path=netrover_introduction_tr.html
+1.base=/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/assets/debug
 4.baseType=DIRECTORY
 0.set=ASSET

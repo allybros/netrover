@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.allybros.netrover"
+    android:versionCode="20180608"
+    android:versionName="1.0.0" > <!-- SDK -->
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <!-- Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Application -->
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:testOnly="true" >
+
+        <!-- HolderActivity -->
+        <activity
+            android:name="com.allybros.netrover.Activity.HolderActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.NoDisplay" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/app_scheme_http" />
+                <data android:scheme="@string/app_scheme_https" />
+            </intent-filter>
+        </activity>
+
+        <!-- HolderService -->
+        <service
+            android:name="com.allybros.netrover.Service.HolderService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" />
+
+        <!-- BrowserActivity -->
+        <activity
+            android:name="com.allybros.netrover.Activity.BrowserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/BrowserActivityTheme"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.WEB_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <!-- ReadabilityActivity -->
+        <activity
+            android:name="com.allybros.netrover.Activity.ReadabilityActivity"
+            android:label="@string/readability_label"
+            android:theme="@style/ReadabilityActivityTheme" />
+
+        <!-- SettingActivity -->
+        <activity
+            android:name="com.allybros.netrover.Activity.SettingActivity"
+            android:label="@string/setting_label"
+            android:theme="@style/SettingActivityTheme" />
+
+        <!-- WhitelistActivity -->
+        <activity
+            android:name="com.allybros.netrover.Activity.WhitelistActivity"
+            android:label="@string/whitelist_label"
+            android:theme="@style/WhitelistActivityTheme" />
+
+        <!-- TokenActivity -->
+        <activity
+            android:name="com.allybros.netrover.Activity.TokenActivity"
+            android:label="@string/token_label"
+            android:theme="@style/TokenActivityTheme" />
+
+        <!-- ClearActivity -->
+        <activity
+            android:name="com.allybros.netrover.Activity.ClearActivity"
+            android:label="@string/clear_label"
+            android:theme="@style/ClearActivityTheme" />
+
+        <!-- ClearService -->
+        <service
+            android:name="com.allybros.netrover.Service.ClearService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.allybros.netrover.Activity.IntroActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.allybros.netrover.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

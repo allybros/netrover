@@ -13,9 +13,11 @@
     <string-array name="list_menu">
         <item>新建標簽</item>
         <item>拷貝鏈接</item>
+        <item>Relayout</item>
         <item>分享</item>
         <item>編輯</item>
         <item>刪除</item>
+
     </string-array>
 
     <!-- Main -->

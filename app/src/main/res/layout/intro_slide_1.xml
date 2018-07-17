@@ -11,22 +11,21 @@
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_above="@+id/brandtext"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="9dp"
+        android:layout_alignLeft="@+id/motto"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/motto"
+        android:layout_marginTop="85dp"
         android:elevation="@dimen/layout_height_12dp"
         android:src="@drawable/netroverlogo_xxdpi"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="145dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/brandtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="209dp"
+        android:layout_marginTop="9dp"
         android:text="@string/app_name"
         android:textColor="@color/white"
         android:textSize="60sp"
@@ -40,8 +39,21 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/brandtext"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="89dp"
         android:text="Be free like Internet"
         android:textColor="@color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/motto"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="57dp"
+        android:gravity="center"
+        android:text="@string/slide_1_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="18sp" />
 </RelativeLayout>

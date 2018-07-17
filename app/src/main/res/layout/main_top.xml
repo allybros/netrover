@@ -63,29 +63,31 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|right">
 
+
+                <ImageButton android:id="@+id/switcher_incognito"
+                    android:contentDescription="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin_8dp"
+                    android:layout_toLeftOf="@id/switcher_overflow"
+                    android:src="@drawable/ic_incognito_disabled"
+                    android:background="@color/transparent">
+                </ImageButton>
+
                 <ImageButton
                     android:id="@+id/switcher_overflow"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/layout_margin_8dp"
-                    android:layout_toLeftOf="@id/switcher_history"
                     android:layout_weight="1"
                     android:background="@color/transparent"
                     android:contentDescription="@null"
                     android:src="@drawable/overflow_selector">
-
                 </ImageButton>
 
 
 
-                <ImageButton android:id="@+id/switcher_history"
-                    android:contentDescription="@null"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/layout_margin_8dp"
-                    android:src="@drawable/history_selector"
-                    android:background="@color/transparent">
-                </ImageButton>
+
 
 
             </LinearLayout>

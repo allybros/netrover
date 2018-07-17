@@ -102,13 +102,13 @@
             android:entryValues="@array/setting_values_tab_position">
         </ListPreference>
 
-        <ListPreference android:key="@string/sp_volume"
-            android:defaultValue="1"
-            android:title="@string/setting_title_volume_control"
-            android:summary="@string/setting_summary_vc_switch_tabs"
+        <ListPreference
+            android:defaultValue="2"
             android:entries="@array/setting_entries_volume_control"
-            android:entryValues="@array/setting_values_volume_control">
-        </ListPreference>
+            android:entryValues="@array/setting_values_volume_control"
+            android:key="@string/sp_volume"
+            android:summary="@string/setting_summary_vc_switch_tabs"
+            android:title="@string/setting_title_volume_control"></ListPreference>
 
         <CheckBoxPreference android:key="@string/sp_omnibox_control"
             android:defaultValue="true"
@@ -162,7 +162,6 @@
 
         <Preference android:title="@string/setting_title_license" />
 
-        <Preference android:title="@string/setting_title_donation" />
 
     </PreferenceCategory>
 

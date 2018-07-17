@@ -103,4 +103,5 @@
   <com.google.ar.sceneform.ux/>
   <androidx.test.ext/>
   <com.google.android.ads.consent/>
+  <androidx.versionedparcelable/>
 </metadata>

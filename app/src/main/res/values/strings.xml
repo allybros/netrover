@@ -427,9 +427,7 @@
     <string name="toast_double_taps_quit">
         Press again to exit
     </string>
-    <string name="toast_emoji">
-        (๑•̀ㅂ•́)و✧
-    </string>
+    <string name="toast_emoji">Version 1.0.1 (Penguin)</string>
     <string name="toast_export_bookmarks_successful">
         Exported bookmarks file at:&#160;
     </string>
@@ -527,7 +525,25 @@
     <string name="token_desc">Go to https://www.readability.com/developers/api to get your own Readability Token</string>
     <string name="permissions_needed_title">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
     <string name="permissions_description">NetRover needs some permissions to save and read data to your phone, locate you to inform web sites your location anonymously.</string>
-    <string name="setting_title_privacy">Privacy</string>
-    <string name="setting_title_accessibility">Accessibility</string>
+    <string name="setting_title_privacy">Privacy and Data</string>
+    <string name="setting_title_accessibility">Layout and Accessibility</string>
+    <string name="goIncognito">Incognito Mode Enabled</string>
+    <string name="exitIncognito">Incognito Mode Disabled</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="use_menu">Use Menu</string>
+    <string name="home_page">Home Page</string>
+    <string name="private_browsing">Private Browsing</string>
+    <string name="gotit">GOT IT!</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_history_message">Are you sure that you really want to delete all history data?</string>
+    <string name="clear_bookmarks">Delete Bookmarks</string>
+    <string name="clear_bookmarks_message">Are you sure that you really want to delete all bookmarks?</string>
+    <string name="slide_1_content">Welcome to NetRover! Finally you get a browser which cares you and your privacy!</string>
+    <string name="use_menu_description">"Use "</string>
+    <string name="home_description">"You can add your favorite sites to home and edit them. Touch add to home from menu to add something to home. "</string>
+    <string name="incognito_description">During Private Mode enabled, NetRover won\'t record sites you visited to history. You can browse safely.</string>
 
 </resources>

@@ -30,6 +30,7 @@ import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.Html;
 import android.text.InputType;
+import android.text.Layout;
 import android.text.TextWatcher;
 import android.text.method.KeyListener;
 import android.util.ArrayMap;
@@ -60,6 +61,7 @@ import com.allybros.netrover.Unit.PermissionsUnit;
 import com.allybros.netrover.Unit.ViewUnit;
 import com.allybros.netrover.View.*;
 import org.askerov.dynamicgrid.DynamicGridView;
+import org.w3c.dom.Text;
 
 import java.util.*;
 
@@ -70,6 +72,7 @@ public class BrowserActivity extends Activity implements BrowserController {
     // Sync with NinjaToast.show() 2000ms delay
     private static final int DOUBLE_TAPS_QUIT_DEFAULT = 2000;
     private SwitcherPanel switcherPanel;
+    private SwitcherPanel incognitoSwitcherPanel;
     private int anchor;
     private float dimen156dp;
     private float dimen144dp;
@@ -81,7 +84,7 @@ public class BrowserActivity extends Activity implements BrowserController {
     private LinearLayout switcherContainer;
     private ImageButton switcherSetting;
     private ImageButton switcherOverflow;
-    private ImageButton switcherHistory;
+    private ImageButton switcherIncognito;
     private ImageButton switcherAdd;
     private ImageButton switcherBookmark;
 
@@ -99,7 +102,9 @@ public class BrowserActivity extends Activity implements BrowserController {
 
     private Button relayoutOK;
     private FrameLayout contentFrame;
-
+    private boolean searchPanelShowing = false;
+    private boolean switcherShowing = false;
+    private static boolean isIncognito;
 
     private class VideoCompletionListener implements MediaPlayer.OnCompletionListener, MediaPlayer.OnErrorListener {
         @Override
@@ -138,7 +143,7 @@ public class BrowserActivity extends Activity implements BrowserController {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            this.getWindow().setStatusBarColor(getResources().getColor(R.color.background_dark));
+            this.getWindow().setStatusBarColor(getResources().getColor(R.color.black));
             ActivityManager.TaskDescription description = new ActivityManager.TaskDescription(
                     getString(R.string.app_name),
                     BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher),
@@ -150,6 +155,7 @@ public class BrowserActivity extends Activity implements BrowserController {
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         anchor = Integer.valueOf(sp.getString(getString(R.string.sp_anchor), "1"));
+
         if (anchor == 0) {
             setContentView(R.layout.main_top);
         } else {
@@ -164,12 +170,7 @@ public class BrowserActivity extends Activity implements BrowserController {
         switcherPanel.setStatusListener(new SwitcherPanel.StatusListener() {
             @Override
             public void onFling() {
-                if (omniboxOverflow.getDrawable().getConstantState()
-                        .equals(getResources().getDrawable(R.drawable.up_selector).getConstantState())){
-                    omniboxOverflow.setImageResource(R.drawable.down_selector);
-                }else{
-                    omniboxOverflow.setImageResource(R.drawable.up_selector);
-                }
+
             }
 
             @Override
@@ -199,6 +200,11 @@ public class BrowserActivity extends Activity implements BrowserController {
         contentFrame = (FrameLayout) findViewById(R.id.main_content);
 
         new AdBlock(this); // For AdBlock cold boot
+
+        isIncognito = sp.getBoolean("SP_INCOGNITO", false);
+        Log.d("Incognito",""+isIncognito);
+        if (isIncognito) goIncognito();
+
         dispatchIntent(getIntent());
     }
 
@@ -230,7 +236,6 @@ public class BrowserActivity extends Activity implements BrowserController {
                     ((NinjaWebView) controller).initPreferences();
                 }
             }
-
             IntentUnit.setSPChange(false);
         }
     }
@@ -252,8 +257,6 @@ public class BrowserActivity extends Activity implements BrowserController {
             if (sp.getBoolean(getString(R.string.sp_first), true)) {
                 Intent ıntent = new Intent(BrowserActivity.this,IntroActivity.class);
                 startActivity(ıntent);
-                PermissionsUnit.firstTimePermissions(this); //Edit by UCA
-
             } else {
                 pinAlbums(null);
             }
@@ -361,6 +364,13 @@ public class BrowserActivity extends Activity implements BrowserController {
             if (fullscreenHolder != null || customView != null || videoView != null) {
                 return onHideCustomView();
             }
+
+            if (searchPanelShowing) {
+                //When searchPanel is active hide it firstly.
+                hideSearchPanel();
+                return searchPanelShowing;
+            }
+
             return onKeyCodeBack(true);
         }
 
@@ -390,7 +400,7 @@ public class BrowserActivity extends Activity implements BrowserController {
         switcherContainer = (LinearLayout) findViewById(R.id.switcher_container);
         switcherSetting = (ImageButton) findViewById(R.id.switcher_setting);
         switcherOverflow = (ImageButton) findViewById(R.id.switcher_overflow);
-        switcherHistory = (ImageButton) findViewById(R.id.switcher_history);
+        switcherIncognito = (ImageButton) findViewById(R.id.switcher_incognito);
         switcherAdd = (ImageButton) findViewById(R.id.switcher_add);
         switcherBookmark = (ImageButton) findViewById(R.id.switcher_bookmark);
 
@@ -405,14 +415,16 @@ public class BrowserActivity extends Activity implements BrowserController {
         switcherOverflow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                switcherShowing = true;
                 showOverflow();
             }
         });
 
-        switcherHistory.setOnClickListener(new View.OnClickListener() {
+        switcherIncognito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addAlbum(BrowserUnit.FLAG_HISTORY);
+                if (!isIncognito) goIncognito();
+                else exitIncognito();
             }
         });
 
@@ -452,6 +464,7 @@ public class BrowserActivity extends Activity implements BrowserController {
         });
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void initOmnibox() {
         omnibox = (RelativeLayout) findViewById(R.id.main_omnibox);
         inputBox = (AutoCompleteTextView) findViewById(R.id.main_omnibox_input);
@@ -549,29 +562,25 @@ public class BrowserActivity extends Activity implements BrowserController {
         //Edited
 
         omniboxOverflow.setOnClickListener(new View.OnClickListener() {
-            boolean OmnisExpanded = false;
+            boolean omnisExpanded = false;
             @Override
             public void onClick(View v) {
-                //showOverflow();
-
                 if (!switcherPanel.isKeyBoardShowing()){
-                    if (!OmnisExpanded){
-                        OmnisExpanded = true;
+                    if (!omnisExpanded){
+                        omnisExpanded = true;
                         switcherPanel.collapsed();
-                        Log.d("gerizekalı","switcher expanding..");
 
                     }
                     else {
-                        OmnisExpanded = false;
+                        omnisExpanded = false;
                         switcherPanel.collapsed();
-                        Log.d("gerizekalı","switcher collapsing");
                     }
                 }
             }
         });
     }
 
-    private void initHomeGrid(final NinjaRelativeLayout layout, boolean update) {
+    private void initHomeGrid(final NinjaRelativeLayout layout, final boolean update) {
         if (update) {
             updateProgress(BrowserUnit.PROGRESS_MIN);
         }
@@ -641,7 +650,7 @@ public class BrowserActivity extends Activity implements BrowserController {
         homeHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addAlbum(BrowserUnit.FLAG_HISTORY);
+                updateAlbum(BrowserUnit.FLAG_HISTORY);
             }
         });
     }
@@ -657,6 +666,7 @@ public class BrowserActivity extends Activity implements BrowserController {
             updateProgress(BrowserUnit.PROGRESS_MIN);
         }
 
+        String title = "Null";
         RecordAction action = new RecordAction(BrowserActivity.this);
         action.open(false);
         final List<Record> list;
@@ -668,8 +678,10 @@ public class BrowserActivity extends Activity implements BrowserController {
                     return first.getTitle().compareTo(second.getTitle());
                 }
             });
+            title = getResources().getString(R.string.album_title_bookmarks);
         } else if (layout.getFlag() == BrowserUnit.FLAG_HISTORY) {
             list = action.listHistory();
+            title = getResources().getString(R.string.album_title_history);
         } else {
             list = new ArrayList<>();
         }
@@ -677,8 +689,10 @@ public class BrowserActivity extends Activity implements BrowserController {
 
         ListView listView = (ListView) layout.findViewById(R.id.record_list);
         TextView textView = (TextView) layout.findViewById(R.id.record_list_empty);
+        ImageButton fab = layout.findViewById(R.id.record_list_fab);
+        TextView titleView = layout.findViewById(R.id.record_list_title);
         listView.setEmptyView(textView);
-
+        titleView.setText(title);
         final RecordAdapter adapter = new RecordAdapter(BrowserActivity.this, R.layout.record_item, list);
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
@@ -706,6 +720,56 @@ public class BrowserActivity extends Activity implements BrowserController {
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 showListMenu(adapter, list, position);
                 return true;
+            }
+        });
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (layout.getFlag() == BrowserUnit.FLAG_BOOKMARKS){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(BrowserActivity.this);
+                    builder.setTitle(getResources().getString(R.string.clear_bookmarks));
+                    builder.setMessage(getResources().getString(R.string.clear_bookmarks_message));
+                    builder.setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            BrowserUnit.clearBookmarks(getApplicationContext());
+                            NinjaToast.show(BrowserActivity.this,getResources().getString(R.string.toast_clear_successful));
+                            updateAlbum(BrowserUnit.FLAG_BOOKMARKS);
+                        }
+                    });
+                    builder.setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //Bir şey yapma
+                        }
+                    });
+                    builder.setCancelable(true);
+                    builder.show();
+
+                }else if (layout.getFlag() == BrowserUnit.FLAG_HISTORY){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(BrowserActivity.this);
+                    AlertDialog.Builder builder1 = builder.setTitle(getResources().getString(R.string.clear_history));
+                    builder.setMessage(getResources().getString(R.string.clear_history_message));
+                    builder.setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            BrowserUnit.clearHistory(getApplicationContext());
+                            NinjaToast.show(BrowserActivity.this,getResources().getString(R.string.toast_clear_successful));
+                            updateAlbum(BrowserUnit.FLAG_HISTORY);
+                        }
+                    });
+                    builder.setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //Bir şey yapma
+                        }
+                    });
+                    builder.setCancelable(true);
+                    builder.show();
+
+
+                }
             }
         });
     }
@@ -791,7 +855,7 @@ public class BrowserActivity extends Activity implements BrowserController {
    // buraya gelirsin
     private synchronized void updateAlbum(int flag) {
         addAlbum(flag);
-
+        removeAlbum(currentAlbumController);
     }
 
 
@@ -1363,7 +1427,7 @@ public class BrowserActivity extends Activity implements BrowserController {
 
     @Override
     public void onLongPress(String url) {
-        WebView.HitTestResult result;
+        final WebView.HitTestResult result;
         if (!(currentAlbumController instanceof NinjaWebView)) {
             return;
         }
@@ -1372,7 +1436,8 @@ public class BrowserActivity extends Activity implements BrowserController {
         final List<String> list = new ArrayList<>();
         list.add(getString(R.string.main_menu_new_tab));
         list.add(getString(R.string.main_menu_copy_link));
-        if (result != null && (result.getType() == WebView.HitTestResult.IMAGE_TYPE || result.getType() == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE)) {
+        if (result != null && (result.getType() == WebView.HitTestResult.IMAGE_TYPE ||
+                result.getType() == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE)) {
             list.add(getString(R.string.main_menu_save));
         }
 
@@ -1406,8 +1471,8 @@ public class BrowserActivity extends Activity implements BrowserController {
                 } else if (s.equals(getString(R.string.main_menu_copy_link))) { // Copy link
                     BrowserUnit.copyURL(BrowserActivity.this, target);
                 } else if (s.equals(getString(R.string.main_menu_save))) { // Save
-                    BrowserUnit.download(BrowserActivity.this, target, target, BrowserUnit.MIME_TYPE_IMAGE);
-
+                    String img = result.getExtra();
+                    BrowserUnit.download(BrowserActivity.this, img, img, BrowserUnit.MIME_TYPE_IMAGE);
                 }
 
                 dialog.hide();
@@ -1418,7 +1483,7 @@ public class BrowserActivity extends Activity implements BrowserController {
 
     private boolean onKeyCodeVolumeUp() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-        int vc = Integer.valueOf(sp.getString(getString(R.string.sp_volume), "1"));
+        int vc = Integer.valueOf(sp.getString(getString(R.string.sp_volume), "2"));
 
         if (vc == 0) { // Switch tabs
             if (switcherPanel.isKeyBoardShowing()) {
@@ -1448,7 +1513,7 @@ public class BrowserActivity extends Activity implements BrowserController {
 
     private boolean onKeyCodeVolumeDown() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-        int vc = Integer.valueOf(sp.getString(getString(R.string.sp_volume), "1"));
+        int vc = Integer.valueOf(sp.getString(getString(R.string.sp_volume), "2"));
 
         if (vc == 0) { // Switch tabs
             if (switcherPanel.isKeyBoardShowing()) {
@@ -1488,7 +1553,11 @@ public class BrowserActivity extends Activity implements BrowserController {
             if (ninjaWebView.canGoBack()) {
                 ninjaWebView.goBack();
             } else {
-                updateAlbum();
+                //Show the last tab
+                AlbumController controller = nextAlbumController(false);
+                showAlbum(controller, false, false, true);
+                AlbumController controllerToClose = nextAlbumController(true);
+                removeAlbum(controllerToClose);
             }
         } else if (currentAlbumController instanceof NinjaRelativeLayout) {
             switch (currentAlbumController.getFlag()) {
@@ -1549,14 +1618,21 @@ public class BrowserActivity extends Activity implements BrowserController {
         searchBox.setText("");
         searchPanel.setVisibility(View.GONE);
         omnibox.setVisibility(View.VISIBLE);
+        searchPanelShowing = false;
     }
 
     private void showSearchPanel() {
-        switcherPanel.collapsed();
-        Log.d("Panel kapat","Search panel açılıyor");
         omnibox.setVisibility(View.GONE);
+        if (switcherShowing){
+            Log.d("showSearchPanel","Switcher is showing, collapse it");
+            switcherShowing = false;
+            switcherPanel.expanded();
+
+        }
+
         searchPanel.setVisibility(View.VISIBLE);
         showSoftInput(searchBox);
+        searchPanelShowing = true;
     }
 
     private boolean showOverflow() {
@@ -1578,10 +1654,6 @@ public class BrowserActivity extends Activity implements BrowserController {
             stringList.remove(array[4]); // Readability
             stringList.remove(array[5]); // Share
 
-            NinjaRelativeLayout ninjaRelativeLayout = (NinjaRelativeLayout) currentAlbumController;
-            if (ninjaRelativeLayout.getFlag() != BrowserUnit.FLAG_HOME) {
-                stringList.remove(array[6]); // Relayout
-            }
         } else if (currentAlbumController != null && currentAlbumController instanceof NinjaWebView) {
             if (!sp.getBoolean(getString(R.string.sp_readability), false)) {
                 stringList.remove(array[4]); // Readability
@@ -1628,6 +1700,7 @@ public class BrowserActivity extends Activity implements BrowserController {
                     }
                     action.close();
                 } else if (s.equals(array[2])) { // Find in page
+                    Log.d("SWITCHER", "FIND ın page");
                     hideSoftInput(inputBox);
                     showSearchPanel();
                 } else if (s.equals(array[3])) { // Screenshot
@@ -1651,11 +1724,52 @@ public class BrowserActivity extends Activity implements BrowserController {
                         NinjaWebView ninjaWebView = (NinjaWebView) currentAlbumController;
                         IntentUnit.share(BrowserActivity.this, ninjaWebView.getTitle(), ninjaWebView.getUrl());
                     }
-                } else if (s.equals(array[6])) { // Relayout
+                } else if (s.equals(array[6])) { // Quit
+                    finish();
+                }
+
+                dialog.hide();
+                dialog.dismiss();
+            }
+        });
+
+        return true;
+    }
+
+    private void showGridMenu(final GridItem gridItem) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+
+        FrameLayout layout = (FrameLayout) getLayoutInflater().inflate(R.layout.dialog_list, null, false);
+        builder.setView(layout);
+
+        final String[] array = getResources().getStringArray(R.array.list_menu);
+        final List<String> stringList = new ArrayList<>();
+        stringList.addAll(Arrays.asList(array));
+        stringList.remove(array[1]); // Copy link
+        stringList.remove(array[3]); // Share
+
+        ListView listView = (ListView) layout.findViewById(R.id.dialog_list);
+        DialogAdapter dialogAdapter = new DialogAdapter(this, R.layout.dialog_text_item, stringList);
+        listView.setAdapter(dialogAdapter);
+        dialogAdapter.notifyDataSetChanged();
+
+        final AlertDialog dialog = builder.create();
+        dialog.show();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String s = stringList.get(position);
+                if (s.equals(array[0])) { // New tab
+                    addAlbum(getString(R.string.album_untitled), gridItem.getURL(), false, null);
+                    NinjaToast.show(BrowserActivity.this, R.string.toast_new_tab_successful);
+                } else if (s.equals(array[2])) { // Relayout
                     NinjaRelativeLayout ninjaRelativeLayout = (NinjaRelativeLayout) currentAlbumController;
                     final DynamicGridView gridView = (DynamicGridView) ninjaRelativeLayout.findViewById(R.id.home_grid);
                     final List<GridItem> gridList = ((GridAdapter) gridView.getAdapter()).getList();
 
+                    gridView.startEditMode();
                     omnibox.setVisibility(View.GONE);
                     relayoutOK.setVisibility(View.VISIBLE);
 
@@ -1727,50 +1841,9 @@ public class BrowserActivity extends Activity implements BrowserController {
                             });
                         }
                     });
-                    gridView.startEditMode();
-                } else if (s.equals(array[7])) { // Quit
-                    finish();
-                }
-
-                dialog.hide();
-                dialog.dismiss();
-            }
-        });
-
-        return true;
-    }
-
-    private void showGridMenu(final GridItem gridItem) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(true);
-
-        FrameLayout layout = (FrameLayout) getLayoutInflater().inflate(R.layout.dialog_list, null, false);
-        builder.setView(layout);
-
-        final String[] array = getResources().getStringArray(R.array.list_menu);
-        final List<String> stringList = new ArrayList<>();
-        stringList.addAll(Arrays.asList(array));
-        stringList.remove(array[1]); // Copy link
-        stringList.remove(array[2]); // Share
-
-        ListView listView = (ListView) layout.findViewById(R.id.dialog_list);
-        DialogAdapter dialogAdapter = new DialogAdapter(this, R.layout.dialog_text_item, stringList);
-        listView.setAdapter(dialogAdapter);
-        dialogAdapter.notifyDataSetChanged();
-
-        final AlertDialog dialog = builder.create();
-        dialog.show();
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String s = stringList.get(position);
-                if (s.equals(array[0])) { // New tab
-                    addAlbum(getString(R.string.album_untitled), gridItem.getURL(), false, null);
-                    NinjaToast.show(BrowserActivity.this, R.string.toast_new_tab_successful);
-                } else if (s.equals(array[3])) { // Edit
+                } else if (s.equals(array[4])) { // Edit
                     showEditDialog(gridItem);
-                } else if (s.equals(array[4])) { // Delete
+                } else if (s.equals(array[5])) { // Delete
                     RecordAction action = new RecordAction(BrowserActivity.this);
                     action.open(true);
                     action.deleteGridItem(gridItem);
@@ -1797,8 +1870,11 @@ public class BrowserActivity extends Activity implements BrowserController {
         final String[] array = getResources().getStringArray(R.array.list_menu);
         final List<String> stringList = new ArrayList<>();
         stringList.addAll(Arrays.asList(array));
-        if (currentAlbumController.getFlag() != BrowserUnit.FLAG_BOOKMARKS) {
-            stringList.remove(array[3]);
+        if (currentAlbumController.getFlag() == BrowserUnit.FLAG_HISTORY) {
+            stringList.remove(array[2]);
+            stringList.remove(array[4]);
+        }else if (currentAlbumController.getFlag() == BrowserUnit.FLAG_BOOKMARKS){
+            stringList.remove(array[2]);
         }
 
         ListView listView = (ListView) layout.findViewById(R.id.dialog_list);
@@ -1819,11 +1895,11 @@ public class BrowserActivity extends Activity implements BrowserController {
                     NinjaToast.show(BrowserActivity.this, R.string.toast_new_tab_successful);
                 } else if (s.equals(array[1])) { // Copy link
                     BrowserUnit.copyURL(BrowserActivity.this, record.getURL());
-                } else if (s.equals(array[2])) { // Share
+                } else if (s.equals(array[3])) { // Share
                     IntentUnit.share(BrowserActivity.this, record.getTitle(), record.getURL());
-                } else if (s.equals(array[3])) { // Edit
+                } else if (s.equals(array[4])) { // Edit
                     showEditDialog(recordAdapter, recordList, location);
-                } else if (s.equals(array[4])) { // Delete
+                } else if (s.equals(array[5])) { // Delete
                     RecordAction action = new RecordAction(BrowserActivity.this);
                     action.open(true);
                     if (currentAlbumController.getFlag() == BrowserUnit.FLAG_BOOKMARKS) {
@@ -2010,4 +2086,37 @@ public class BrowserActivity extends Activity implements BrowserController {
 
         return list.get(index);
     }
+
+    //Close last tab method
+    private void closeTab(AlbumController currentAlbum){
+
+    }
+
+
+    // Incognito Mode Methods
+    private void goIncognito(){
+        switcherIncognito.setImageResource(R.drawable.ic_incognito_enabled);
+        if (currentAlbumController != null)
+            currentAlbumController.getAlbumView().setBackgroundResource(R.drawable.album_shape_inco);
+        isIncognito = true;
+        NinjaToast.show(BrowserActivity.this,getResources().getString(R.string.goIncognito));
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        preferences.edit().putBoolean("SP_INCOGNITO",true).apply();
+    }
+    private void exitIncognito(){
+        switcherIncognito.setImageResource(R.drawable.ic_incognito_disabled);
+        if (currentAlbumController != null)
+            currentAlbumController.getAlbumView().setBackgroundResource(R.drawable.album_shape_blue);
+        isIncognito = false;
+        NinjaToast.show(BrowserActivity.this,getResources().getString(R.string.exitIncognito));
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        preferences.edit().putBoolean("SP_INCOGNITO",false).apply();
+    }
+
+    public static boolean isIncognito(){
+        return isIncognito;
+    }
+
 }
+
+

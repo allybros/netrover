@@ -738,9 +738,9 @@ public class DynamicGridView extends GridView {
 
             SwitchCellAnimator switchCellAnimator;
 
-            if (isPostHoneycomb() && isPreLollipop())   //Between Android 3.0 and Android L
+            if (isPostHoneycomb() && isPreLollipop())   //Between Android intro_3.0 and Android L
                 switchCellAnimator = new KitKatSwitchCellAnimator(deltaX, deltaY);
-            else if (isPreLollipop())                   //Before Android 3.0
+            else if (isPreLollipop())                   //Before Android intro_3.0
                 switchCellAnimator = new PreHoneycombCellAnimator(deltaX, deltaY);
             else                                //Android L
                 switchCellAnimator = new LSwitchCellAnimator(deltaX, deltaY);

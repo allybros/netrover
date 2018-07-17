@@ -62,7 +62,7 @@ public class SearchEngineListPreference extends ListPreference {
 
         final EditText editText = (EditText) layout.findViewById(R.id.dialog_edit);
         editText.setHint(R.string.dialog_se_hint);
-        String custom = sp.getString(getContext().getString(R.string.sp_search_engine_custom), "");
+        String custom = sp.getString(getContext().getString(R.string.sp_search_engine_customgo), "");
         editText.setText(custom);
         editText.setSelection(custom.length());
         showSoftInput(editText);
@@ -83,7 +83,7 @@ public class SearchEngineListPreference extends ListPreference {
                     return true;
                 } else {
                     sp.edit().putString(getContext().getString(R.string.sp_search_engine), "5").commit();
-                    sp.edit().putString(getContext().getString(R.string.sp_search_engine_custom), domain).commit();
+                    sp.edit().putString(getContext().getString(R.string.sp_search_engine_customgo), domain).commit();
 
                     hideSoftInput(editText);
                     dialog.hide();
