@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-114:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-114:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-114:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-114:12
 MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:transition:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/4506623aa1fd0171d866f4f8c35a2bcc/AndroidManifest.xml:17:1-28:12
@@ -18,9 +18,9 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /home/umut/.gradle/c
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/57ab542bdf2db2938fbc0888564cce2f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/e1ea4a69136218a35d8c8025aca4b3a2/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/umut/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/cdc2beafb9423f4344a2ffc73bf9298b/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
-INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-111:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-114:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-114:12
+INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:2:1-114:12
 	package
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml
@@ -104,7 +104,7 @@ ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src
 	android:name
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:16:22-78
 application
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:18:5-109:19
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:18:5-112:19
 MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4ea67c7ee29aa8c9a2614d77d2db1192/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/AndroidManifest.xml:25:5-29:19
@@ -264,9 +264,13 @@ ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src
 	android:name
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:102:13-49
 activity#com.allybros.netrover.Activity.IntroActivity
-ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:106:9-107:54
+ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:106:9-110:15
+	android:screenOrientation
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:109:13-49
 	android:label
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:107:19-51
+	android:theme
+		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:108:17-96
 	android:name
 		ADDED from /home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/src/main/AndroidManifest.xml:106:19-57
 meta-data#android.support.VERSION

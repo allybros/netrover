@@ -1019,7 +1019,7 @@
     <string name="app_scheme_https" translatable="false">
         https
     </string>
-    <string name="app_version" translatable="false">1.0.1</string>
+    <string name="app_version" translatable="false">1.0.2</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bookmarks_filename">NetRoverBookmarks</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
@@ -1583,7 +1583,7 @@
     <string name="toast_double_taps_quit">
         Press again to exit
     </string>
-    <string name="toast_emoji">Version 1.0.1 (Penguin)</string>
+    <string name="toast_emoji">Version 1.0.2 (Penguin)</string>
     <string name="toast_export_bookmarks_failed">
         Failed to export Bookmarks
     </string>

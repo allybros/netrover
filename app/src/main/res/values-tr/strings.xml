@@ -125,7 +125,7 @@
     <string name="toast_delete_successful">Başarıyla Silindi</string>
     <string name="toast_domain_already_exists">Alan Adı Zaten Bulunmakta</string>
     <string name="toast_double_taps_quit">Çıkmak İçin Tekrar Basın</string>
-    <string name="toast_emoji">Sürüm 1.0.1 (Penguen)</string>
+    <string name="toast_emoji">Sürüm 1.0.2 (Penguen)</string>
     <string name="toast_export_bookmarks_successful">Yer İminin Aktarıldığı Dosya:</string>
     <string name="toast_export_bookmarks_failed">Yer İmi Aktarılırken Sorun Oluştu</string>
     <string name="toast_export_whitelist_successful">Beyaz Listenin Aktarıldığı Dosya:</string>

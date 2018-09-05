@@ -585,8 +585,13 @@ public class BrowserActivity extends Activity implements BrowserController {
             updateProgress(BrowserUnit.PROGRESS_MIN);
         }
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        boolean isFirst = preferences.getBoolean(getString(R.string.sp_first),false);
+
+
         RecordAction action = new RecordAction(this);
-        action.open(false);
+        action.open(true);
+        if (isFirst) action.addGridItem(new GridItem("Ally Bros","allybros.com","Dosya",0));
         final List<GridItem> gridList = action.listGrid();
         action.close();
 
@@ -640,6 +645,8 @@ public class BrowserActivity extends Activity implements BrowserController {
             }
         });
 
+
+
         homeBookmarks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -653,12 +660,6 @@ public class BrowserActivity extends Activity implements BrowserController {
                 updateAlbum(BrowserUnit.FLAG_HISTORY);
             }
         });
-    }
-
-    private void initHomeList(Context context, String ... items ){
-        //ListView homeList = findViewById(R.id.home_list);
-        //ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,android.R.layout.list_content,android.R.id.text1,items);
-        //homeList.setAdapter(dataAdapter);
     }
 
     private void initBHList(final NinjaRelativeLayout layout, boolean update) {

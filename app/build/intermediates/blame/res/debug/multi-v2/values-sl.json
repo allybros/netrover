@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/umut/Ally Bros Projects/NetRover/Ultimate_Browser/Ninja/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/home/umut/Ally Bros Projects/NetRover/source/NetRover/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
-                    "source": "/home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/978046e1ce58e0a0459173bcf986b7ca/res/values-sl/values-sl.xml",
+                    "source": "/home/umut/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6ea95fe0dacab3707fd01b7c5e2fd13/res/values-sl/values-sl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

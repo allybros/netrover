@@ -54,13 +54,15 @@ public class IntroActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+/*
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                     | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+            getWindow().requestFeature(Window.FEATURE_ACTION_BAR); //Burada hata oluşabiliyor, yukarı aldım
+            getActionBar().hide();
         }
-        getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
-        getActionBar().hide();
+*/
+
         setContentView(R.layout.activity_intro);
 
         introPager = findViewById(R.id.intro_pager);
@@ -106,8 +108,6 @@ public class IntroActivity extends Activity {
 
 
         PermissionsUnit.firstTimePermissions(IntroActivity.this);
-
-
 
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -158,7 +158,6 @@ public class IntroActivity extends Activity {
     private void changeStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.TRANSPARENT);
         }
     }
