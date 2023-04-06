@@ -6,7 +6,7 @@ NetRover does not include trackers or ad services.
 NetRover Web Browser is based on Ninja Browser (https://github.com/mthli/Ninja).
 As a free software, you can use the source code of NetRover. For detail please see Apache License Conditions.
 
-## 🌟 Feautures
+## 🌟 Features
 
 Basically NetRover is a simple web browser like any other, but there are some different things you need to know:
 
